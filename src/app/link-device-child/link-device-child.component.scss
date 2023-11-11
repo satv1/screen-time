@@ -1,0 +1,29 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h1 {
+        margin-bottom: 30px;
+        font-size: 25px;
+      }
+  
+    form {
+      width: auto;
+      max-width: auto;
+    }
+  
+    .form-group {
+      margin-bottom: 20px;
+      width: auto; 
+    }
+  
+    button {
+      width: 100px;
+      // margin-left: 60%;
+      margin-top: 30px;
+
+    }
+  }
+  

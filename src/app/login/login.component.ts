@@ -18,7 +18,7 @@ export class LoginComponent {
 
   submitted = false;
   onSubmit() { this.submitted = true; 
-    this.router.navigate(['login'])
+    this.router.navigate(['user-type'])
   }
 
 }

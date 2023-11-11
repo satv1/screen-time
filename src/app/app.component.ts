@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'screen-time-app';
+  ischild = false;
+  isparent = false;
 }

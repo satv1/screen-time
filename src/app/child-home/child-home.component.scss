@@ -1,14 +1,4 @@
-.btn-primary{
-    width: 70px;
-    height: 60px;
-    background-color: white;
 
-}
-
-img{
-    width: 45px;
-    height: 45px;
-}
 .container {
     display: flex;
     flex-direction: column;
@@ -16,4 +6,52 @@ img{
     justify-content: center;
 
 
+        .screen-time {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-bottom: 20px;
+    
+            .apps {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+            }
+    
+            p {
+                margin: 5px 0;
+            }
+        }
+
+
+        h3{
+            font-size: 20px;
+          }
+          p{
+            margin-right: 10%;
+          }
+        .btn-primary{
+            width: 70px;
+            height: 60px;
+            background-color: white;
+        
+        }
+        img{
+            width: 45px;
+            height: 45px;
+        }
+        .col-md-4{
+            margin-bottom: 10px;
+        }
+        .row4{
+            margin-left: 30px;
+        }
+        .des{
+            h5{
+                font-weight: bold;
+            }
+        }
+    
+
   }
+

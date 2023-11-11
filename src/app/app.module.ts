@@ -9,6 +9,10 @@ import { UserTypeComponent } from './user-type/user-type.component';
 import { LinkDeviceComponent } from './link-device/link-device.component';
 import { LinkDeviceChildComponent } from './link-device-child/link-device-child.component';
 import { ChildHomeComponent } from './child-home/child-home.component';
+import { MatCardModule } from '@angular/material/card';
+import { MatIconModule } from '@angular/material/icon';
+import { MatButtonModule } from '@angular/material/button';
+
 
 
 @NgModule({
@@ -23,7 +27,10 @@ import { ChildHomeComponent } from './child-home/child-home.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    MatCardModule,
+    MatIconModule,
+    MatButtonModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

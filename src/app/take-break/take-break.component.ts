@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { NotifyService } from '../notify.service';
 
 
 @Component({
@@ -9,11 +10,13 @@ import { Router } from '@angular/router';
 })
 export class TakeBreakComponent {
 
-  constructor(private router: Router){}
+  constructor(private router: Router, private notifyService: NotifyService){}
 
 
   submitted = false;
-  onSubmit() { this.submitted = true; 
+  onContinue() { 
+    this.submitted = true; 
+    this.notifyService.toggleNotification();
     this.router.navigate(['child-home'])
   }
 

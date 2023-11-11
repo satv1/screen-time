@@ -24,7 +24,7 @@ export class LinkDeviceComponent {
   submitted = false;
   onSubmit() { 
     this.submitted = true; 
-    this.router.navigate(['user-type'])
+    this.router.navigate(['parent-home'])
   }
   }
 

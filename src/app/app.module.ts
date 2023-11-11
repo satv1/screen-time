@@ -12,6 +12,11 @@ import { ChildHomeComponent } from './child-home/child-home.component';
 import { MatCardModule } from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
+import { HeaderComponent } from './header/header.component';
+import { ParentHomeComponent } from './parent-home/parent-home.component';
+import { NotifiedComponent } from './notified/notified.component';
+import { SetLimitComponent } from './set-limit/set-limit.component';
+import { TakeBreakComponent } from './take-break/take-break.component';
 
 
 
@@ -22,7 +27,12 @@ import { MatButtonModule } from '@angular/material/button';
     UserTypeComponent,
     LinkDeviceComponent,
     LinkDeviceChildComponent,
-    ChildHomeComponent
+    ChildHomeComponent,
+    HeaderComponent,
+    ParentHomeComponent,
+    NotifiedComponent,
+    SetLimitComponent,
+    TakeBreakComponent
   ],
   imports: [
     BrowserModule,

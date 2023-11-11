@@ -1,0 +1,20 @@
+<div class="container">
+    <app-header></app-header>
+    <div class="screen-time">
+        <h3>Screen Time Total: 1 hr 15 min</h3>
+        <div class="apps">
+            <p>TikTok: 35 min</p>
+            <p>YouTube: 23 min</p>
+            <p class = "last">Instagram: 17 min</p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-8">
+            <button type="submit" class="btn btn-primary mt-2" (click)="notify()">Notify to take a break</button>
+        </div>
+        <div class="col-md-8">
+            <button type="submit" class="btn btn-secondary mt-2" (click)="setLimit()">Set Screen Time Limit</button>
+        </div>
+    </div>
+</div>

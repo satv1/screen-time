@@ -7,18 +7,17 @@
             <p><span style="font-weight: bold;">YouTube</span>: 23 min</p>
             <p><span style="font-weight: bold;">Instagram</span>: 17 min</p>
         </div>
-        <div *ngIf="timeLimit !== ''" class = "timeLim">
+        <div *ngIf="timeLimit !== ''" class="timeLim">
             <h3>Time Limit: {{ timeLimit }}</h3>
-        </div> 
+        </div>
     </div>
 
     <div class="row">
-        <div class="col-md-8">
+        <div class="col-12"> <!-- Full width on all devices -->
             <button type="submit" class="btn btn-primary mt-2" (click)="notify()">Notify to take a break</button>
         </div>
-        <div class="col-md-8">
-            <button type="submit" class="btn btn-secondary mt-2" (click)="setLimit()">Set Screen Time Limit</button>
+        <div class="col-12 mt-2"> <!-- Full width on all devices -->
+            <button type="submit" class="btn btn-primary" (click)="setLimit()">Set Screen Time Limit</button>
         </div>
-               
     </div>
 </div>

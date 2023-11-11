@@ -1,53 +1,52 @@
 <div class="container">
     <app-header></app-header>
     <div class="screen-time">
-        <h3><span style="font-weight: bold;">Screen Time Total: </span>: 1 hr 15 min</h3>
-        <div class="apps">
-            <p><span style="font-weight: bold;">TikTok</span>: 35 min</p>
-            <p><span style="font-weight: bold;">YouTube</span>: 23 min</p>
-            <p><span style="font-weight: bold;">Instagram</span>: 17 min</p>
-        </div>
-        <div *ngIf="timeLimit !== ''">
-            <h3>Time Limit: {{ timeLimit }}</h3>
-        </div>  
+      <h3><span style="font-weight: bold;">Screen Time Total: </span>: 1 hr 15 min</h3>
+      <div class="apps">
+        <p><span style="font-weight: bold;">TikTok</span>: 35 min</p>
+        <p><span style="font-weight: bold;">YouTube</span>: 23 min</p>
+        <p><span style="font-weight: bold;">Instagram</span>: 17 min</p>
+      </div>
+      <div *ngIf="timeLimit !== ''">
+        <h3>Time Limit: {{ timeLimit }}</h3>
+      </div>
     </div>
-    <div class="col-md-4">
+  
+    <div class="row">
+      <div class="col-12 col-md-4">
         <div class="content-wrapper" style="display: flex; align-items: center;">
-            <a href="https://www.youtube.com/watch?v=tQOSMcGkt6E&t=105s" target="_blank" class="btn btn-primary mt-2">
-                <img src="assets/youtube-icon.png" alt="Description of the image">
-            </a>
+          <a href="https://www.youtube.com/watch?v=tQOSMcGkt6E&t=105s" target="_blank" class="btn btn-primary mt-2">
+            <img src="assets/youtube-icon.png" alt="Description of the image">
+          </a>
             <div class="des" style="margin-left: 10px;">
                 <h5><span style="font-weight: bold;">Effects of Phone Usage</span></h5>
                 <h6>Learn what screen time is and the effects of excessive screen time.</h6>
             </div>
         </div>
     </div>
-    
-    
-        <div class="col-md-4">
-            <div class="content-wrapper" style="display: flex; align-items: center;">
-                <a href="https://youtu.be/FowxMfjN7n0?si=idcJOmoVu5oshsi4" target="_blank" class="btn btn-primary mt-2">
-                    <img src="assets/youtube-icon.png" alt="Description of the image">
-                </a>
+    <div class="col-12 col-md-4">
+      <div class="content-wrapper" style="display: flex; align-items: center;">
+        <a href="https://youtu.be/FowxMfjN7n0?si=idcJOmoVu5oshsi4" target="_blank" class="btn btn-primary mt-2">
+          <img src="assets/youtube-icon.png" alt="Description of the image">
+        </a>
                 <div class="des" style="margin-left: 10px;">
                     <h5><span style="font-weight: bold;">Internet Safety</span></h5>
                     <h6>How to be safe on the internet</h6>
                 </div>
             </div>
         </div>
-        
-    
-        <div class="col-md-4">
-            <div class="content-wrapper" style="display: flex; align-items: center;">
-                <a href="https://www.youtube.com/watch?v=dhpCdqOtuj0" target="_blank" class="btn btn-primary mt-2">
-                    <img src="assets/youtube-icon.png" alt="Description of the image">
-                </a>
+        <div class="col-12 col-md-4">
+          <div class="content-wrapper" style="display: flex; align-items: center;">
+            <a href="https://www.youtube.com/watch?v=dhpCdqOtuj0" target="_blank" class="btn btn-primary mt-2">
+              <img src="assets/youtube-icon.png" alt="Description of the image">
+            </a>
                 <div class="des" style="margin-left: 10px;">
                     <h5><span style="font-weight: bold;">Healthy Habits</span></h5>
                     <h6>People are always telling us to be healthy–but what does that actually mean?</h6>
                 </div>
             </div>
-        </div>        
+        </div>  
+</div>        
     
     
 </div>

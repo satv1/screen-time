@@ -7,10 +7,10 @@
             <p>YouTube: 23 min</p>
             <p class = "last">Instagram: 17 min</p>
         </div>
+        <div *ngIf="timeLimit !== ''">
+            <h3>Time Limit: {{ timeLimit }}</h3>
+        </div>  
     </div>
-
-    
-
     <div class="col-md-4">
         <div class="content-wrapper" style="display: flex; align-items: center;">
             <a href="https://www.youtube.com/watch?v=tQOSMcGkt6E&t=105s" target="_blank" class="btn btn-primary mt-2">

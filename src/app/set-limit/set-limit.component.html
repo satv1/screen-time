@@ -1,1 +1,19 @@
-<p>set-limit works!</p>
+<div class = container>
+    <div class="header-container">
+        <div class="back" (click) = "back()" >Back</div>
+    </div>
+    <h3>Set Time Limit</h3>
+        <form #loginForm="ngForm">
+            <div class="row">
+                <div class="form-group col-md-3">
+                    <label for="name">Time Limit</label>
+                    <input type="text" class="form-control" id="timeLimit" required [(ngModel)]="timeLimit" name="timeLimit" placeholder="Ex: 1h 30m">
+                    <div [hidden]="loginForm.controls['timeLimit'].valid || loginForm.controls['timeLimit'].pristine" class="alert alert-danger">
+                        Field is required
+                    </div>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary mt-2" [disabled]="!loginForm.form.valid" (click)="onSubmit()">Submit</button>
+
+            </form>
+    </div>

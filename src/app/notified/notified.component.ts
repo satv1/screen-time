@@ -9,6 +9,8 @@ import { NotifyService } from '../notify.service';
 })
 export class NotifiedComponent {
 
+
+
   constructor(private router: Router, private notifyService: NotifyService) {}
 
   submitted = false;

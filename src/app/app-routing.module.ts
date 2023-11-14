@@ -9,6 +9,7 @@ import { ParentHomeComponent } from './parent-home/parent-home.component';
 import { NotifiedComponent } from './notified/notified.component';
 import { SetLimitComponent } from './set-limit/set-limit.component';
 import { TakeBreakComponent } from './take-break/take-break.component';
+import { SuggestComponent } from './suggest/suggest.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'login', pathMatch: 'full' },
@@ -21,6 +22,8 @@ const routes: Routes = [
   { path: 'notified', component: NotifiedComponent },
   { path: 'set-limit', component: SetLimitComponent },
   { path: 'take-break', component: TakeBreakComponent },
+  { path: 'suggest', component: SuggestComponent },
+
 ];
 
 @NgModule({

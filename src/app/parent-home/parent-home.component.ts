@@ -40,5 +40,10 @@ export class ParentHomeComponent {
     
   }
 
+  setSuggestion(){
+    this.router.navigate(['suggest'])
+
+  }
+
 
 }

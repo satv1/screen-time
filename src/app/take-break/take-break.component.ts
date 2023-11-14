@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { NotifyService } from '../notify.service';
+import { SuggestService } from '../suggest.service';
+
 
 
 @Component({
@@ -10,14 +12,31 @@ import { NotifyService } from '../notify.service';
 })
 export class TakeBreakComponent {
 
-  constructor(private router: Router, private notifyService: NotifyService){}
+  constructor(private router: Router, private notifyService: NotifyService, private suggestService: SuggestService){}
 
-
+  suggest: string = '';
   submitted = false;
   onContinue() { 
     this.submitted = true; 
     this.notifyService.toggleNotification();
     this.router.navigate(['child-home'])
   }
+
+
+
+
+
+  ngOnInit() {
+    this.getSuggest();
+  }
+
+  getSuggest() {
+    this.suggest = this.suggestService.getSuggest();
+  }
+
+
+
+
+
 
 }

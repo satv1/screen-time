@@ -1,0 +1,19 @@
+<div class = container>
+    <div class="header-container">
+        <div class="back" (click) = "back()" >Back</div>
+    </div>
+    <h3>Write a message or suggest an alternative activity</h3>
+        <form #loginForm="ngForm">
+            <div class="row">
+                <div class="form-group col-md-3">
+                    <label for="name">Message</label>
+                    <textarea type="text" class="form-control" rows = "4"id="suggest" required [(ngModel)]="suggest" name="suggest" placeholder="Ex: Spend some time outdoors"></textarea>
+                    <div [hidden]="loginForm.controls['suggest'].valid || loginForm.controls['suggest'].pristine" class="alert alert-danger">
+                        Field is required
+                    </div>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary mt-2" [disabled]="!loginForm.form.valid" (click)="onSubmit()">Submit</button>
+
+            </form>
+    </div>

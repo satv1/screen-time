@@ -17,6 +17,7 @@ import { ParentHomeComponent } from './parent-home/parent-home.component';
 import { NotifiedComponent } from './notified/notified.component';
 import { SetLimitComponent } from './set-limit/set-limit.component';
 import { TakeBreakComponent } from './take-break/take-break.component';
+import { SuggestComponent } from './suggest/suggest.component';
 
 
 
@@ -32,7 +33,8 @@ import { TakeBreakComponent } from './take-break/take-break.component';
     ParentHomeComponent,
     NotifiedComponent,
     SetLimitComponent,
-    TakeBreakComponent
+    TakeBreakComponent,
+    SuggestComponent
   ],
   imports: [
     BrowserModule,

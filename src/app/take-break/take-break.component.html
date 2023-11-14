@@ -1,6 +1,9 @@
 <div class = container>
     <h3>Take a break!</h3> 
-    <h4>Click on the icon below</h4> 
+    <div *ngIf="suggest !== ''">
+        <h2>Message from parent: {{ suggest }}</h2>
+      </div>
+      <h4>Click on the icon below</h4> 
     <div class="col-md-4">
         <div class="content-wrapper" style="display: flex; align-items: center;">
             <a href="https://www.youtube.com/watch?v=dhpCdqOtuj0" target="_blank" class="btn btn-secondary mt-2">

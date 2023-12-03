@@ -1,5 +1,59 @@
 <div class="container">
     <app-header></app-header>
+    <p style="margin-left: 8px; font-weight: bold;"> {{ name }}'s Screen Time</p>
+    <div class="content-container">
+        <p style="margin-top: 10px; margin-left: 10px; font-weight: bold; font-size: x-large;"> <span style="font-size: larger;">1</span>h <span style="font-size: larger;">15</span>m </p>
+        <div class="line-separator"></div>
+        <div class="icon-container">
+            <img src="assets/tiktok.png" alt="Icon" class="icon">
+            <p class="text">TikTok: 35 min</p>
+        </div>
+        <div class="icon-container">
+            <img src="assets/ytube.png" alt="Icon" class="icon">
+            <p class="text">YouTube: 23 min</p>
+        </div>
+
+        <div class="icon-container">
+            <img src="assets/insta.png" alt="Icon" class="icon">
+            <p class="text">Instagram: 17 min</p>
+        </div>
+        <div style="margin-top: 8px;" class="line-separator"></div>
+    </div>
+
+
+
+    <p style="margin-left: 10px; font-weight: bold; margin-top: 20px;"> Screen Time Limit</p>
+
+    <div class="content-container" style = "margin-bottom: 20px;">
+        <div *ngIf="timeLimit !== ''" class="timeLim">
+            <p>Time Limit: {{ timeLimit }}</p>
+        </div>
+        <div class="container12">
+            <p class="text">Time Limit</p>
+            <button type="submit" style = "width: 180px;" class="btn btn-primary" (click)="setLimit()">Set Screen Time Limit</button>
+        </div>
+    </div>
+
+
+    <div class="content-container">
+        <div class="container12">
+            <p class="text">Notify to take a break</p>
+            <button type="submit" class="btn btn-primary mt-2" (click)="notify()">Notify</button>
+        </div>
+    </div>
+
+    <div class="content-container" style = "margin-top: 20px; margin-bottom: 60px;">
+        <div class="container12">
+            <p class="text">Set Suggestion Message</p>
+            <button type="submit" class="btn btn-primary" (click)="setSuggestion()">Suggest</button>
+        </div>
+    </div>
+
+</div>
+
+
+<!-- <div class="container">
+    <app-header></app-header>
     <div class="screen-time">
         <p class = "top"> {{ name }}'s  Screen Time Total</p>
       <h3>1 hr 15 min</h3>
@@ -24,4 +78,4 @@
             <button type="submit" class="btn btn-primary" (click)="setSuggestion()">Set Suggestion Message</button>
         </div>
     </div>
-</div>
+</div> -->

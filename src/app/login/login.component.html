@@ -15,19 +15,16 @@
 
         <div class="row">
             <div class="form-group col-md-3">
-                <label for="name">Password</label>
-                <input type="text" class="form-control" id="password" required [(ngModel)]="password" name="password">
-                <div [hidden]="loginForm.controls['password'].valid || loginForm.controls['password'].pristine" class="alert alert-danger">
-                    Field is required
-                </div>
+              <label for="name">Password</label>
+              <input type="password" class="form-control" id="password" required [(ngModel)]="password" name="password">
+              <div [hidden]="loginForm.controls['password'].valid || loginForm.controls['password'].pristine" class="alert alert-danger">
+                Field is required
+              </div>
             </div>
-        </div>
+          </div>
+          
 
-        <div class="row">
-            <div class="col-md-6">
                 <button type="submit" class="btn btn-primary mt-2" [disabled]="!loginForm.form.valid" (click)="onSubmit()">Submit</button>
-            </div>
-        </div>
     </form>
 </div>
 

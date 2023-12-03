@@ -1,15 +1,11 @@
+.header-container {
+  display: flex;
+  justify-content: flex-end; 
+  padding: 10px;
+  margin-right: 10px;
+  font-weight: bold;
+}
+
 .logout {
-    font-weight: bold;
-    width: 100%;
-    color: balck;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-left: 180px;
-    margin-bottom: 10px;
-    font-family: 'Montserrat';
-
-
-  
-  
-  }
+  cursor: pointer;
+}

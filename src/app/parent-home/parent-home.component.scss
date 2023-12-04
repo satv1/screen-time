@@ -1,14 +1,20 @@
+
+
 .container {
     background-color: rgb(235, 248, 235);
+    height: 100%;
+    width: 80%;
+
 
 }
 .content-container {
 
-    background-color: white;
-    padding: 10px;
-    border-radius: 10px;
-    width: 100%;
-    // box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
   }
   .line-separator {
     border-top: 1px solid #ccc;
@@ -74,21 +80,20 @@
   align-items: center;
 }
 
-/* Style for the image icon */
 .icon {
-  width: 20px; /* Set the width of the icon */
-  height: 20px; /* Set the height of the icon */
-  margin-right: 10px; /* Adjust the margin as needed */
+  width: 20px; 
+  height: 20px; 
+  margin-right: 10px;
   margin-bottom: 2px;
 }
 
-/* Additional styles for the text */
+
 .text {
   margin-top: 12px;
 }
 .container12 {
   display: flex;
-  justify-content: space-between; /* Align items to both ends */
+  justify-content: space-between; 
   align-items: center;
 }
 
@@ -98,3 +103,6 @@ button{
   height: 30px;
   flex-shrink: 0;
   }
+
+
+  

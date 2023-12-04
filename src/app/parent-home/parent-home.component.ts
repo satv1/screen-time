@@ -45,5 +45,10 @@ export class ParentHomeComponent {
 
   }
 
+  setContent(){
+    this.router.navigate(['content'])
+
+  }
+
 
 }

@@ -10,6 +10,9 @@ import { NotifiedComponent } from './notified/notified.component';
 import { SetLimitComponent } from './set-limit/set-limit.component';
 import { TakeBreakComponent } from './take-break/take-break.component';
 import { SuggestComponent } from './suggest/suggest.component';
+import { ContentComponent } from './content/content.component';
+import { RatingComponent } from './rating/rating.component';
+import { NavBarComponent } from './nav-bar/nav-bar.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'login', pathMatch: 'full' },
@@ -23,6 +26,9 @@ const routes: Routes = [
   { path: 'set-limit', component: SetLimitComponent },
   { path: 'take-break', component: TakeBreakComponent },
   { path: 'suggest', component: SuggestComponent },
+  { path: 'content', component: ContentComponent },
+  { path: 'rating', component: RatingComponent },
+  { path: 'nav-bar', component: NavBarComponent }
 
 ];
 

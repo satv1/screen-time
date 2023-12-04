@@ -18,6 +18,9 @@ import { NotifiedComponent } from './notified/notified.component';
 import { SetLimitComponent } from './set-limit/set-limit.component';
 import { TakeBreakComponent } from './take-break/take-break.component';
 import { SuggestComponent } from './suggest/suggest.component';
+import { ContentComponent } from './content/content.component';
+import { RatingComponent } from './rating/rating.component';
+import { NavBarComponent } from './nav-bar/nav-bar.component';
 
 
 
@@ -34,7 +37,10 @@ import { SuggestComponent } from './suggest/suggest.component';
     NotifiedComponent,
     SetLimitComponent,
     TakeBreakComponent,
-    SuggestComponent
+    SuggestComponent,
+    ContentComponent,
+    RatingComponent,
+    NavBarComponent
   ],
   imports: [
     BrowserModule,

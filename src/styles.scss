@@ -1,16 +1,18 @@
 @import url('https://unpkg.com/bootstrap@3.3.7/dist/css/bootstrap.min.css');
 
-// * {
-//   font-family: 'Montserrat';
-// }
-
-// @media only screen and (max-device-width: 414px) and (max-device-height: 896px) and (-webkit-min-device-pixel-ratio: 2) {
-// }
-
 body {
-  overflow: hidden;
+  margin: 0;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 .container {
-  overflow: hidden;
+  max-width: 100%;
+  overflow-y: auto; /* Enable vertical scrolling if needed */
+  padding: 15px; /* Add padding for better readability */
+}
+
+@media only screen and (max-width: 414px) {
+  .container {
+    padding: 10px;
+  }
 }

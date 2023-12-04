@@ -1,34 +1,33 @@
 .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: rgb(238, 238, 238);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(238, 238, 238);
+  font-family: 'Montserrat';
+  height: 100vh;
+  text-align: center;
+
+  h1 {
+    margin-bottom: 20px;
+    font-size: 25px;
     font-family: 'Montserrat';
-    height: 100vh;
-
-
-    h1 {
-        margin-bottom: 70px;
-        font-size: 25px;
-        font-family: 'Montserrat';
-      }
-  
-    form {
-      width: auto;
-      max-width: auto;
-    }
-  
-    .form-group {
-      margin-bottom: 20px;
-      width: auto; 
-    }
-  
-    button {
-      width: 100px;
-      margin-left: 25%;
-      margin-top: 70px;
-
-    }
   }
-  
+
+  form {
+    width: 80%;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .form-group {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  button {
+    width: 100%;
+    max-width: 200px;
+    margin-top: 20px;
+  }
+}

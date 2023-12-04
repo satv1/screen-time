@@ -1,31 +1,31 @@
 <div class="container">
-    <h4>Welcome to ROSA</h4>
-    <h1>Login</h1>
+  <h4>Welcome to ROSA</h4>
+  <h1>Login</h1>
 
-    <form #loginForm="ngForm">
-        <div class="row">
-            <div class="form-group col-md-3">
-                <label for="name">Username</label>
-                <input type="text" class="form-control" id="username" required [(ngModel)]="username" name="username">
-                <div [hidden]="loginForm.controls['username'].valid || loginForm.controls['username'].pristine" class="alert alert-danger">
-                    Field is required
-                </div>
-            </div>
+  <form #loginForm="ngForm">
+    <div class="row">
+      <div class="form-group col-md-6">
+        <label for="username">Username</label>
+        <input type="text" class="form-control" id="username" required [(ngModel)]="username" name="username">
+        <div [hidden]="loginForm.controls['username'].valid || loginForm.controls['username'].pristine" class="alert alert-danger">
+          Field is required
         </div>
+      </div>
+    </div>
 
-        <div class="row">
-            <div class="form-group col-md-3">
-              <label for="name">Password</label>
-              <input type="password" class="form-control" id="password" required [(ngModel)]="password" name="password">
-              <div [hidden]="loginForm.controls['password'].valid || loginForm.controls['password'].pristine" class="alert alert-danger">
-                Field is required
-              </div>
-            </div>
-          </div>
-          
+    <div class="row">
+      <div class="form-group col-md-6">
+        <label for="password">Password</label>
+        <input type="password" class="form-control" id="password" required [(ngModel)]="password" name="password">
+        <div [hidden]="loginForm.controls['password'].valid || loginForm.controls['password'].pristine" class="alert alert-danger">
+          Field is required
+        </div>
+      </div>
+    </div>
 
-                <button type="submit" class="btn btn-primary mt-2" [disabled]="!loginForm.form.valid" (click)="onSubmit()">Submit</button>
-    </form>
+    <button type="submit" style = "width: 180px; margin-right: 10px;"class="btn btn-primary mt-2" [disabled]="!loginForm.form.valid" (click)="onSubmit()">Submit</button>
+    <button type="submit" style = "width: 180px;" class="btn btn-secondary mt-2" (click)="onSubmit()">Create Account</button>
+
+
+  </form>
 </div>
-
-  

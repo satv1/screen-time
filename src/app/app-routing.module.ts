@@ -29,8 +29,8 @@ const routes: Routes = [
   { path: 'suggest', component: SuggestComponent },
   { path: 'content', component: ContentComponent },
   { path: 'rating', component: RatingComponent },
-  { path: 'nav-bar', component: NavBarComponent }
-  { path: 'parent-schedule', component: ParentScheduleComponent },
+  { path: 'nav-bar', component: NavBarComponent },
+  { path: 'parent-schedule', component: ParentScheduleComponent }
 
 ];
 

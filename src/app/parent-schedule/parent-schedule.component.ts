@@ -15,8 +15,9 @@ export class ParentScheduleComponent {
   timeLimit: string = '';
   name: string = '';
   isCellClicked: boolean = false;
+  //isDragging: boolean = false;
 
-  constructor(private cdr: ChangeDetectorRef, router: Router, private notifyService: NotifyService, private timeService: TimeService, private dataService: DataService) {
+  constructor(private  router: Router, private cdr: ChangeDetectorRef, private notifyService: NotifyService, private timeService: TimeService, private dataService: DataService) {
   }
 
   ngOnInit() {
@@ -32,11 +33,15 @@ export class ParentScheduleComponent {
     this.name = this.dataService.getName();
   }
 
+  back() {
+    this.router.navigate(['parent-home']);
+  }
+
   color(event: Event) {
     const element = event.target as HTMLElement;
 
     if (element) {
-      // Toggle the 'cell-clicked' class
+       //Toggle the 'cell-clicked' class
       this.isCellClicked = !this.isCellClicked;
 
       // Add or remove the class based on the toggle state
@@ -48,4 +53,6 @@ export class ParentScheduleComponent {
     }
     this.cdr.detectChanges();
   }
+
+   
 }

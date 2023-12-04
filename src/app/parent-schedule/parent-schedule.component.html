@@ -1,7 +1,20 @@
 <div class="container">
   <!-- <app-header></app-header> -->
+  <div class="buttonHolder">
+    <button class="back" (click)="back()">back</button>
+  </div>
+
   <p class="top">{{ name }}'s Screen Time Schedule</p>
   <div class="scheduleContainer">
+    <div class="dayTitle"></div>
+    <div class="dayTitle">M</div>
+    <div class="dayTitle">T</div>
+    <div class="dayTitle">W</div>
+    <div class="dayTitle">Th</div>
+    <div class="dayTitle">F</div>
+    <div class="dayTitle">S</div>
+    <div class="dayTitle">Su</div>
+
     <div class="timeList">
       <div class="cell1">7:00 am</div>
       <div class="cell2">8:00 am</div>
@@ -19,19 +32,115 @@
     </div>
 
     <div class="schedule">
-      <div class="cell1" (click)="color($event)">7:00 am</div>
-      <div class="cell2" (click)="color($event)">8:00 am</div>
-      <div class="cell3" (click)="color($event)">9:00 am</div>
-      <div class="cell4" (click)="color($event)">10:00 am</div>
-      <div class="cell5" (click)="color($event)">11:00 am</div>
-      <div class="cell6" (click)="color($event)">12:00 pm</div>
-      <div class="cell7" (click)="color($event)">1:00 pm</div>
-      <div class="cell8" (click)="color($event)">2:00 pm</div>
-      <div class="cell9" (click)="color($event)">3:00 pm</div>
-      <div class="cell10" (click)="color($event)">4:00 pm</div>
-      <div class="cell11" (click)="color($event)">5:00 pm</div>
-      <div class="cell12" (click)="color($event)">6:00 pm</div>
-      <div class="cell13" (click)="color($event)">7:00 pm</div>
+      <div class="cell1" (click)="color($event)"></div>
+      <div class="cell2" (click)="color($event)"></div>
+      <div class="cell3" (click)="color($event)"></div>
+      <div class="cell4" (click)="color($event)"></div>
+      <div class="cell5" (click)="color($event)"></div>
+      <div class="cell6" (click)="color($event)"></div>
+      <div class="cell7" (click)="color($event)"></div>
+      <div class="cell8" (click)="color($event)"></div>
+      <div class="cell9" (click)="color($event)"></div>
+      <div class="cell10" (click)="color($event)"></div>
+      <div class="cell11" (click)="color($event)"></div>
+      <div class="cell12" (click)="color($event)"></div>
+      <div class="cell13" (click)="color($event)"></div>
+    </div>
+
+    <div class="schedule">
+      <div class="cell1" (click)="color($event)"></div>
+      <div class="cell2" (click)="color($event)"></div>
+      <div class="cell3" (click)="color($event)"></div>
+      <div class="cell4" (click)="color($event)"></div>
+      <div class="cell5" (click)="color($event)"></div>
+      <div class="cell6" (click)="color($event)"></div>
+      <div class="cell7" (click)="color($event)"></div>
+      <div class="cell8" (click)="color($event)"></div>
+      <div class="cell9" (click)="color($event)"></div>
+      <div class="cell10" (click)="color($event)"></div>
+      <div class="cell11" (click)="color($event)"></div>
+      <div class="cell12" (click)="color($event)"></div>
+      <div class="cell13" (click)="color($event)"></div>
+    </div>
+
+    <div class="schedule">
+      <div class="cell1" (click)="color($event)"></div>
+      <div class="cell2" (click)="color($event)"></div>
+      <div class="cell3" (click)="color($event)"></div>
+      <div class="cell4" (click)="color($event)"></div>
+      <div class="cell5" (click)="color($event)"></div>
+      <div class="cell6" (click)="color($event)"></div>
+      <div class="cell7" (click)="color($event)"></div>
+      <div class="cell8" (click)="color($event)"></div>
+      <div class="cell9" (click)="color($event)"></div>
+      <div class="cell10" (click)="color($event)"></div>
+      <div class="cell11" (click)="color($event)"></div>
+      <div class="cell12" (click)="color($event)"></div>
+      <div class="cell13" (click)="color($event)"></div>
+    </div>
+
+    <div class="schedule">
+      <div class="cell1" (click)="color($event)"></div>
+      <div class="cell2" (click)="color($event)"></div>
+      <div class="cell3" (click)="color($event)"></div>
+      <div class="cell4" (click)="color($event)"></div>
+      <div class="cell5" (click)="color($event)"></div>
+      <div class="cell6" (click)="color($event)"></div>
+      <div class="cell7" (click)="color($event)"></div>
+      <div class="cell8" (click)="color($event)"></div>
+      <div class="cell9" (click)="color($event)"></div>
+      <div class="cell10" (click)="color($event)"></div>
+      <div class="cell11" (click)="color($event)"></div>
+      <div class="cell12" (click)="color($event)"></div>
+      <div class="cell13" (click)="color($event)"></div>
+    </div>
+
+    <div class="schedule">
+      <div class="cell1" (click)="color($event)"></div>
+      <div class="cell2" (click)="color($event)"></div>
+      <div class="cell3" (click)="color($event)"></div>
+      <div class="cell4" (click)="color($event)"></div>
+      <div class="cell5" (click)="color($event)"></div>
+      <div class="cell6" (click)="color($event)"></div>
+      <div class="cell7" (click)="color($event)"></div>
+      <div class="cell8" (click)="color($event)"></div>
+      <div class="cell9" (click)="color($event)"></div>
+      <div class="cell10" (click)="color($event)"></div>
+      <div class="cell11" (click)="color($event)"></div>
+      <div class="cell12" (click)="color($event)"></div>
+      <div class="cell13" (click)="color($event)"></div>
+    </div>
+
+    <div class="schedule">
+      <div class="cell1" (click)="color($event)"></div>
+      <div class="cell2" (click)="color($event)"></div>
+      <div class="cell3" (click)="color($event)"></div>
+      <div class="cell4" (click)="color($event)"></div>
+      <div class="cell5" (click)="color($event)"></div>
+      <div class="cell6" (click)="color($event)"></div>
+      <div class="cell7" (click)="color($event)"></div>
+      <div class="cell8" (click)="color($event)"></div>
+      <div class="cell9" (click)="color($event)"></div>
+      <div class="cell10" (click)="color($event)"></div>
+      <div class="cell11" (click)="color($event)"></div>
+      <div class="cell12" (click)="color($event)"></div>
+      <div class="cell13" (click)="color($event)"></div>
+    </div>
+
+    <div class="schedule">
+      <div class="cell1" (click)="color($event)"></div>
+      <div class="cell2" (click)="color($event)"></div>
+      <div class="cell3" (click)="color($event)"></div>
+      <div class="cell4" (click)="color($event)"></div>
+      <div class="cell5" (click)="color($event)"></div>
+      <div class="cell6" (click)="color($event)"></div>
+      <div class="cell7" (click)="color($event)"></div>
+      <div class="cell8" (click)="color($event)"></div>
+      <div class="cell9" (click)="color($event)"></div>
+      <div class="cell10" (click)="color($event)"></div>
+      <div class="cell11" (click)="color($event)"></div>
+      <div class="cell12" (click)="color($event)"></div>
+      <div class="cell13" (click)="color($event)"></div>
     </div>
   </div>
 </div>

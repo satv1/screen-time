@@ -37,10 +37,6 @@
     Screen Time Limit
   </p>
 
-  <p style="margin-left: 10px; font-weight: bold; margin-top: 20px">
-    Screen Time Limit
-  </p>
-
   <div class="content-container" style="margin-bottom: 10px">
     <div class="container12">
       <div *ngIf="timeLimit == ''" class="timeLim">
@@ -73,70 +69,68 @@
       </div>
     </div>
   </div>
-  <div class="modal-body"></div>
-</div>
-<div id="overlay"></div>
 
-<div class="content-container">
-  <div class="container12">
-    <p class="text">Notify to take a break</p>
-    <button type="submit" class="btn btn-primary mt-2" (click)="notify()">
-      Notify
-    </button>
+  <div class="content-container">
+    <div class="container12">
+      <p class="text">Notify to take a break</p>
+      <button type="submit" class="btn btn-primary mt-2" (click)="notify()">
+        Notify
+      </button>
+    </div>
   </div>
-</div>
 
-<div class="content-container" style="margin-top: 10px; margin-bottom: 10px">
-  <div class="container12">
-    <p class="text">Suggest an activity</p>
-    <button type="submit" class="btn btn-primary" (click)="setSuggestion()">
-      Suggest
-    </button>
+  <div class="content-container" style="margin-top: 10px; margin-bottom: 10px">
+    <div class="container12">
+      <p class="text">Suggest an activity</p>
+      <button type="submit" class="btn btn-primary" (click)="setSuggestion()">
+        Suggest
+      </button>
+    </div>
   </div>
-</div>
 
-<div class="content-container" style="margin-top: 10px; margin-bottom: 10px">
-  <div class="container12">
-    <p class="text">Select content for child</p>
-    <button type="submit" class="btn btn-primary" (click)="setContent()">
-      Content
-    </button>
+  <div class="content-container" style="margin-top: 10px; margin-bottom: 10px">
+    <div class="container12">
+      <p class="text">Select content for child</p>
+      <button type="submit" class="btn btn-primary" (click)="setContent()">
+        Content
+      </button>
+    </div>
   </div>
-</div>
 
-<div class="content-container" style="margin-top: 10px; margin-bottom: 10px">
-  <div class="container12">
-    <p class="text">Set a schedule</p>
-    <button type="submit" class="btn btn-primary" (click)="setSuggestion()">
-      Schedule
-    </button>
+  <div class="content-container" style="margin-top: 10px; margin-bottom: 10px">
+    <div class="container12">
+      <p class="text">Set a schedule</p>
+      <button type="submit" class="btn btn-primary" (click)="setSuggestion()">
+        Schedule
+      </button>
+    </div>
   </div>
 </div>
 
 <!-- <div class="container">
-    <app-header></app-header>
-    <div class="screen-time">
-        <p class = "top"> {{ name }}'s  Screen Time Total</p>
-      <h3>1 hr 15 min</h3>
-      <div class="apps"> <br>
-            <p><span style="font-weight: bold;">TikTok</span>: 35 min</p>
-            <p><span style="font-weight: bold;">YouTube</span>: 23 min</p>
-            <p><span style="font-weight: bold;">Instagram</span>: 17 min</p>
-        </div>
-        <div *ngIf="timeLimit !== ''" class="timeLim">
-            <h3>Time Limit: {{ timeLimit }}</h3>
-        </div>
-    </div>
+  <app-header></app-header>
+  <div class="screen-time">
+      <p class = "top"> {{ name }}'s  Screen Time Total</p>
+    <h3>1 hr 15 min</h3>
+    <div class="apps"> <br>
+          <p><span style="font-weight: bold;">TikTok</span>: 35 min</p>
+          <p><span style="font-weight: bold;">YouTube</span>: 23 min</p>
+          <p><span style="font-weight: bold;">Instagram</span>: 17 min</p>
+      </div>
+      <div *ngIf="timeLimit !== ''" class="timeLim">
+          <h3>Time Limit: {{ timeLimit }}</h3>
+      </div>
+  </div>
 
-    <div class="row">
-        <div class="col-12"> 
-            <button type="submit" class="btn btn-primary mt-2" (click)="notify()">Notify to Take a Break</button>
-        </div>
-        <div class="col-12 mt-2"> 
-            <button type="submit" class="btn btn-primary" (click)="setLimit()">Set Screen Time Limit</button>
-        </div>
-        <div class="col-12 mt-2"> 
-            <button type="submit" class="btn btn-primary" (click)="setSuggestion()">Set Suggestion Message</button>
-        </div>
-    </div>
+  <div class="row">
+      <div class="col-12"> 
+          <button type="submit" class="btn btn-primary mt-2" (click)="notify()">Notify to Take a Break</button>
+      </div>
+      <div class="col-12 mt-2"> 
+          <button type="submit" class="btn btn-primary" (click)="setLimit()">Set Screen Time Limit</button>
+      </div>
+      <div class="col-12 mt-2"> 
+          <button type="submit" class="btn btn-primary" (click)="setSuggestion()">Set Suggestion Message</button>
+      </div>
+  </div>
 </div> -->

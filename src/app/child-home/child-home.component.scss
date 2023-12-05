@@ -25,7 +25,50 @@
     margin-bottom: 10px;
   }
   
-
+// styling for schedule
+  .scheduleContainer {
+    display: grid;
+    grid-template-columns: 70px 25px 25px 25px 25px 25px 25px 25px;
+    gap: 14px; /* Adjust the gap as needed */
+    margin-top: 20px; /* Add margin for separation */
+    //background: white;
+    //border-radius: 10px;
+    font-family: 'Arial';
+    font-weight: 700;
+}
+.timeList{
+  display: grid;
+  grid-template-columns: 70px;
+  align-items: center;
+}
+.schedule{
+  display: grid;
+  grid-template-columns: 25px;
+  grid-gap: 1px;
+  //grid-template-columns: repeat(13, 1fr);
+  border: 1px solid black; //maybe change to dropshadow
+  border-radius: 10px;
+  align-items: center;
+}
+.schedule div{
+  cursor: pointer;
+  text-align: center;
+  background-color: lightgray;
+  height: 20px;
+  width: 23px;
+}
+.cell1{
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.cell13{
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.cell-clicked {
+  background-color: green !important;
+}
+// end of schedule styling 
 
 .icon-container {
   display: flex;

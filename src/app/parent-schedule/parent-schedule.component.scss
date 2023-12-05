@@ -31,9 +31,6 @@
 .timeList{
     display: grid;
     grid-template-columns: 70px;
-    //grid-template-columns: repeat(13, 1fr);
-    //border: 1px solid black; //maybe change to dropshadow
-    //border-radius: 10px;
     align-items: center;
 }
 
@@ -53,11 +50,72 @@
     height: 20px;
     width: 43px;
 }
+//schedule1
 .cell1{
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
 .cell13{
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+//schedule2
+.cell1-2{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.cell13-2{
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+//schedule3
+.cell1-3{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.cell13-3{
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+//schedule4
+.cell1-4{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.cell13-4{
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+//schedule5
+.cell1-5{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.cell13-5{
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+//schedule6
+.cell1-6{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.cell13-6{
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+//schedule7
+.cell1-7{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.cell13-7{
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }

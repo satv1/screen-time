@@ -4,6 +4,8 @@ import { Router } from '@angular/router';
 import { TimeService } from '../time.service';
 import { DataService } from '../data.service';
 import { ChangeDetectorRef } from '@angular/core';
+//service testing
+import { ColorService } from '../color.service';
 
 @Component({
   selector: 'app-parent-schedule',
@@ -17,7 +19,7 @@ export class ParentScheduleComponent {
   isCellClicked: boolean = false;
   //isDragging: boolean = false;
 
-  constructor(private  router: Router, private cdr: ChangeDetectorRef, private notifyService: NotifyService, private timeService: TimeService, private dataService: DataService) {
+  constructor(private  router: Router,  public colorService: ColorService, private cdr: ChangeDetectorRef, private notifyService: NotifyService, private timeService: TimeService, private dataService: DataService) {
   }
 
   ngOnInit() {
@@ -37,7 +39,7 @@ export class ParentScheduleComponent {
     this.router.navigate(['parent-home']);
   }
 
-  color(event: Event) {
+  color(event: Event, key: string) {
     const element = event.target as HTMLElement;
 
     if (element) {
@@ -46,11 +48,16 @@ export class ParentScheduleComponent {
 
       // Add or remove the class based on the toggle state
       if (this.isCellClicked) {
+        const selectedColor = 'green'; // Change this to the color you want
         element.classList.add('cell-clicked');
+        this.colorService.setColor(key, selectedColor);
       } else {
         element.classList.remove('cell-clicked');
+        this.colorService.setColor(key, '');
       }
+
     }
+   
     this.cdr.detectChanges();
   }
 

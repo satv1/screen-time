@@ -32,115 +32,479 @@
     </div>
 
     <div class="schedule">
-      <div class="cell1" (click)="color($event)"></div>
-      <div class="cell2" (click)="color($event)"></div>
-      <div class="cell3" (click)="color($event)"></div>
-      <div class="cell4" (click)="color($event)"></div>
-      <div class="cell5" (click)="color($event)"></div>
-      <div class="cell6" (click)="color($event)"></div>
-      <div class="cell7" (click)="color($event)"></div>
-      <div class="cell8" (click)="color($event)"></div>
-      <div class="cell9" (click)="color($event)"></div>
-      <div class="cell10" (click)="color($event)"></div>
-      <div class="cell11" (click)="color($event)"></div>
-      <div class="cell12" (click)="color($event)"></div>
-      <div class="cell13" (click)="color($event)"></div>
+      <div
+        class="cell1"
+        (click)="color($event, 'cell1')"
+        [style.background-color]="colorService.getColor('cell1')"
+      ></div>
+      <div
+        class="cell2"
+        (click)="color($event, 'cell2')"
+        [style.background-color]="colorService.getColor('cell2')"
+      ></div>
+      <div
+        class="cell3"
+        (click)="color($event, 'cell3')"
+        [style.background-color]="colorService.getColor('cell3')"
+      ></div>
+      <div
+        class="cell4"
+        (click)="color($event, 'cell4')"
+        [style.background-color]="colorService.getColor('cell4')"
+      ></div>
+      <div
+        class="cell5"
+        (click)="color($event, 'cell5')"
+        [style.background-color]="colorService.getColor('cell5')"
+      ></div>
+      <div
+        class="cell6"
+        (click)="color($event, 'cell6')"
+        [style.background-color]="colorService.getColor('cell6')"
+      ></div>
+      <div
+        class="cell7"
+        (click)="color($event, 'cell7')"
+        [style.background-color]="colorService.getColor('cell7')"
+      ></div>
+      <div
+        class="cell8"
+        (click)="color($event, 'cell8')"
+        [style.background-color]="colorService.getColor('cell8')"
+      ></div>
+      <div
+        class="cell9"
+        (click)="color($event, 'cell9')"
+        [style.background-color]="colorService.getColor('cell9')"
+      ></div>
+      <div
+        class="cell10"
+        (click)="color($event, 'cell10')"
+        [style.background-color]="colorService.getColor('cell10')"
+      ></div>
+      <div
+        class="cell11"
+        (click)="color($event, 'cell11')"
+        [style.background-color]="colorService.getColor('cell11')"
+      ></div>
+      <div
+        class="cell12"
+        (click)="color($event, 'cell12')"
+        [style.background-color]="colorService.getColor('cell12')"
+      ></div>
+      <div
+        class="cell13"
+        (click)="color($event, 'cell13')"
+        [style.background-color]="colorService.getColor('cell13')"
+      ></div>
     </div>
 
     <div class="schedule">
-      <div class="cell1" (click)="color($event)"></div>
-      <div class="cell2" (click)="color($event)"></div>
-      <div class="cell3" (click)="color($event)"></div>
-      <div class="cell4" (click)="color($event)"></div>
-      <div class="cell5" (click)="color($event)"></div>
-      <div class="cell6" (click)="color($event)"></div>
-      <div class="cell7" (click)="color($event)"></div>
-      <div class="cell8" (click)="color($event)"></div>
-      <div class="cell9" (click)="color($event)"></div>
-      <div class="cell10" (click)="color($event)"></div>
-      <div class="cell11" (click)="color($event)"></div>
-      <div class="cell12" (click)="color($event)"></div>
-      <div class="cell13" (click)="color($event)"></div>
+      <div
+        class="cell1-2"
+        (click)="color($event, 'cell1-2')"
+        [style.background-color]="colorService.getColor('cell1-2')"
+      ></div>
+      <div
+        class="cell2-2"
+        (click)="color($event, 'cell2-2')"
+        [style.background-color]="colorService.getColor('cell2-2')"
+      ></div>
+      <div
+        class="cell3-2"
+        (click)="color($event, 'cell3-2')"
+        [style.background-color]="colorService.getColor('cell3-2')"
+      ></div>
+      <div
+        class="cell4-2"
+        (click)="color($event, 'cell4-2')"
+        [style.background-color]="colorService.getColor('cell4-2')"
+      ></div>
+      <div
+        class="cell5-2"
+        (click)="color($event, 'cell5-2')"
+        [style.background-color]="colorService.getColor('cell5-2')"
+      ></div>
+      <div
+        class="cell6-2"
+        (click)="color($event, 'cell6-2')"
+        [style.background-color]="colorService.getColor('cell6-2')"
+      ></div>
+      <div
+        class="cell7-2"
+        (click)="color($event, 'cell7-2')"
+        [style.background-color]="colorService.getColor('cell7-2')"
+      ></div>
+      <div
+        class="cell8-2"
+        (click)="color($event, 'cell8-2')"
+        [style.background-color]="colorService.getColor('cell8-2')"
+      ></div>
+      <div
+        class="cell9-2"
+        (click)="color($event, 'cell9-2')"
+        [style.background-color]="colorService.getColor('cell9-2')"
+      ></div>
+      <div
+        class="cell10-2"
+        (click)="color($event, 'cell10-2')"
+        [style.background-color]="colorService.getColor('cell10-2')"
+      ></div>
+      <div
+        class="cell11-2"
+        (click)="color($event, 'cell11-2')"
+        [style.background-color]="colorService.getColor('cell11-2')"
+      ></div>
+      <div
+        class="cell12-2"
+        (click)="color($event, 'cell12-2')"
+        [style.background-color]="colorService.getColor('cell12-2')"
+      ></div>
+      <div
+        class="cell13-2"
+        (click)="color($event, 'cell13-2')"
+        [style.background-color]="colorService.getColor('cell13-2')"
+      ></div>
     </div>
 
     <div class="schedule">
-      <div class="cell1" (click)="color($event)"></div>
-      <div class="cell2" (click)="color($event)"></div>
-      <div class="cell3" (click)="color($event)"></div>
-      <div class="cell4" (click)="color($event)"></div>
-      <div class="cell5" (click)="color($event)"></div>
-      <div class="cell6" (click)="color($event)"></div>
-      <div class="cell7" (click)="color($event)"></div>
-      <div class="cell8" (click)="color($event)"></div>
-      <div class="cell9" (click)="color($event)"></div>
-      <div class="cell10" (click)="color($event)"></div>
-      <div class="cell11" (click)="color($event)"></div>
-      <div class="cell12" (click)="color($event)"></div>
-      <div class="cell13" (click)="color($event)"></div>
+      <div
+        class="cell1-3"
+        (click)="color($event, 'cell1-3')"
+        [style.background-color]="colorService.getColor('cell1-3')"
+      ></div>
+      <div
+        class="cell2-3"
+        (click)="color($event, 'cell2-3')"
+        [style.background-color]="colorService.getColor('cell2-3')"
+      ></div>
+      <div
+        class="cell3-3"
+        (click)="color($event, 'cell3-3')"
+        [style.background-color]="colorService.getColor('cell3-3')"
+      ></div>
+      <div
+        class="cell4-3"
+        (click)="color($event, 'cell4-3')"
+        [style.background-color]="colorService.getColor('cell4-3')"
+      ></div>
+      <div
+        class="cell5-3"
+        (click)="color($event, 'cell5-3')"
+        [style.background-color]="colorService.getColor('cell5-3')"
+      ></div>
+      <div
+        class="cell6-3"
+        (click)="color($event, 'cell6-3')"
+        [style.background-color]="colorService.getColor('cell6-3')"
+      ></div>
+      <div
+        class="cell7-3"
+        (click)="color($event, 'cell7-3')"
+        [style.background-color]="colorService.getColor('cell7-3')"
+      ></div>
+      <div
+        class="cell8-3"
+        (click)="color($event, 'cell8-3')"
+        [style.background-color]="colorService.getColor('cell8-3')"
+      ></div>
+      <div
+        class="cell9-3"
+        (click)="color($event, 'cell9-3')"
+        [style.background-color]="colorService.getColor('cell9-3')"
+      ></div>
+      <div
+        class="cell10-3"
+        (click)="color($event, 'cell10-3')"
+        [style.background-color]="colorService.getColor('cell10-3')"
+      ></div>
+      <div
+        class="cell11-3"
+        (click)="color($event, 'cell11-3')"
+        [style.background-color]="colorService.getColor('cell11-3')"
+      ></div>
+      <div
+        class="cell12-3"
+        (click)="color($event, 'cell12-3')"
+        [style.background-color]="colorService.getColor('cell12-3')"
+      ></div>
+      <div
+        class="cell13-3"
+        (click)="color($event, 'cell13-3')"
+        [style.background-color]="colorService.getColor('cell13-3')"
+      ></div>
     </div>
 
     <div class="schedule">
-      <div class="cell1" (click)="color($event)"></div>
-      <div class="cell2" (click)="color($event)"></div>
-      <div class="cell3" (click)="color($event)"></div>
-      <div class="cell4" (click)="color($event)"></div>
-      <div class="cell5" (click)="color($event)"></div>
-      <div class="cell6" (click)="color($event)"></div>
-      <div class="cell7" (click)="color($event)"></div>
-      <div class="cell8" (click)="color($event)"></div>
-      <div class="cell9" (click)="color($event)"></div>
-      <div class="cell10" (click)="color($event)"></div>
-      <div class="cell11" (click)="color($event)"></div>
-      <div class="cell12" (click)="color($event)"></div>
-      <div class="cell13" (click)="color($event)"></div>
+      <div
+        class="cell1-4"
+        (click)="color($event, 'cell1-4')"
+        [style.background-color]="colorService.getColor('cell1-4')"
+      ></div>
+      <div
+        class="cell2-4"
+        (click)="color($event, 'cell2-4')"
+        [style.background-color]="colorService.getColor('cell2-4')"
+      ></div>
+      <div
+        class="cell3-4"
+        (click)="color($event, 'cell3-4')"
+        [style.background-color]="colorService.getColor('cell3-4')"
+      ></div>
+      <div
+        class="cell4-4"
+        (click)="color($event, 'cell4-4')"
+        [style.background-color]="colorService.getColor('cell4-4')"
+      ></div>
+      <div
+        class="cell5-4"
+        (click)="color($event, 'cell5-4')"
+        [style.background-color]="colorService.getColor('cell5-4')"
+      ></div>
+      <div
+        class="cell6-4"
+        (click)="color($event, 'cell6-4')"
+        [style.background-color]="colorService.getColor('cell6-4')"
+      ></div>
+      <div
+        class="cell7-4"
+        (click)="color($event, 'cell7-4')"
+        [style.background-color]="colorService.getColor('cell7-4')"
+      ></div>
+      <div
+        class="cell8-4"
+        (click)="color($event, 'cell8-4')"
+        [style.background-color]="colorService.getColor('cell8-4')"
+      ></div>
+      <div
+        class="cell9-4"
+        (click)="color($event, 'cell9-4')"
+        [style.background-color]="colorService.getColor('cell9-4')"
+      ></div>
+      <div
+        class="cell10-4"
+        (click)="color($event, 'cell10-4')"
+        [style.background-color]="colorService.getColor('cell10-4')"
+      ></div>
+      <div
+        class="cell11-4"
+        (click)="color($event, 'cell11-4')"
+        [style.background-color]="colorService.getColor('cell11-4')"
+      ></div>
+      <div
+        class="cell12-4"
+        (click)="color($event, 'cell12-4')"
+        [style.background-color]="colorService.getColor('cell12-4')"
+      ></div>
+      <div
+        class="cell13-4"
+        (click)="color($event, 'cell13-4')"
+        [style.background-color]="colorService.getColor('cell13-4')"
+      ></div>
     </div>
 
     <div class="schedule">
-      <div class="cell1" (click)="color($event)"></div>
-      <div class="cell2" (click)="color($event)"></div>
-      <div class="cell3" (click)="color($event)"></div>
-      <div class="cell4" (click)="color($event)"></div>
-      <div class="cell5" (click)="color($event)"></div>
-      <div class="cell6" (click)="color($event)"></div>
-      <div class="cell7" (click)="color($event)"></div>
-      <div class="cell8" (click)="color($event)"></div>
-      <div class="cell9" (click)="color($event)"></div>
-      <div class="cell10" (click)="color($event)"></div>
-      <div class="cell11" (click)="color($event)"></div>
-      <div class="cell12" (click)="color($event)"></div>
-      <div class="cell13" (click)="color($event)"></div>
+      <div
+        class="cell1-5"
+        (click)="color($event, 'cell1-5')"
+        [style.background-color]="colorService.getColor('cell1-5')"
+      ></div>
+      <div
+        class="cell2-5"
+        (click)="color($event, 'cell2-5')"
+        [style.background-color]="colorService.getColor('cell2-5')"
+      ></div>
+      <div
+        class="cell3-5"
+        (click)="color($event, 'cell3-5')"
+        [style.background-color]="colorService.getColor('cell3-5')"
+      ></div>
+      <div
+        class="cell4-5"
+        (click)="color($event, 'cell4-5')"
+        [style.background-color]="colorService.getColor('cell4-5')"
+      ></div>
+      <div
+        class="cell5-5"
+        (click)="color($event, 'cell5-5')"
+        [style.background-color]="colorService.getColor('cell5-5')"
+      ></div>
+      <div
+        class="cell6-5"
+        (click)="color($event, 'cell6-5')"
+        [style.background-color]="colorService.getColor('cell6-5')"
+      ></div>
+      <div
+        class="cell7-5"
+        (click)="color($event, 'cell7-5')"
+        [style.background-color]="colorService.getColor('cell7-5')"
+      ></div>
+      <div
+        class="cell8-5"
+        (click)="color($event, 'cell8-5')"
+        [style.background-color]="colorService.getColor('cell8-5')"
+      ></div>
+      <div
+        class="cell9-5"
+        (click)="color($event, 'cell9-5')"
+        [style.background-color]="colorService.getColor('cell9-5')"
+      ></div>
+      <div
+        class="cell10-5"
+        (click)="color($event, 'cell10-5')"
+        [style.background-color]="colorService.getColor('cell10-5')"
+      ></div>
+      <div
+        class="cell11-5"
+        (click)="color($event, 'cell11-5')"
+        [style.background-color]="colorService.getColor('cell11-5')"
+      ></div>
+      <div
+        class="cell12-5"
+        (click)="color($event, 'cell12-5')"
+        [style.background-color]="colorService.getColor('cell12-5')"
+      ></div>
+      <div
+        class="cell13-5"
+        (click)="color($event, 'cell13-5')"
+        [style.background-color]="colorService.getColor('cell13-5')"
+      ></div>
     </div>
 
     <div class="schedule">
-      <div class="cell1" (click)="color($event)"></div>
-      <div class="cell2" (click)="color($event)"></div>
-      <div class="cell3" (click)="color($event)"></div>
-      <div class="cell4" (click)="color($event)"></div>
-      <div class="cell5" (click)="color($event)"></div>
-      <div class="cell6" (click)="color($event)"></div>
-      <div class="cell7" (click)="color($event)"></div>
-      <div class="cell8" (click)="color($event)"></div>
-      <div class="cell9" (click)="color($event)"></div>
-      <div class="cell10" (click)="color($event)"></div>
-      <div class="cell11" (click)="color($event)"></div>
-      <div class="cell12" (click)="color($event)"></div>
-      <div class="cell13" (click)="color($event)"></div>
+      <div
+        class="cell1-6"
+        (click)="color($event, 'cell1-6')"
+        [style.background-color]="colorService.getColor('cell1-6')"
+      ></div>
+      <div
+        class="cell2-6"
+        (click)="color($event, 'cell2-6')"
+        [style.background-color]="colorService.getColor('cell2-6')"
+      ></div>
+      <div
+        class="cell3-6"
+        (click)="color($event, 'cell3-6')"
+        [style.background-color]="colorService.getColor('cell3-6')"
+      ></div>
+      <div
+        class="cell4-6"
+        (click)="color($event, 'cell4-6')"
+        [style.background-color]="colorService.getColor('cell4-6')"
+      ></div>
+      <div
+        class="cell5-6"
+        (click)="color($event, 'cell5-6')"
+        [style.background-color]="colorService.getColor('cell5-6')"
+      ></div>
+      <div
+        class="cell6-6"
+        (click)="color($event, 'cell6-6')"
+        [style.background-color]="colorService.getColor('cell6-6')"
+      ></div>
+      <div
+        class="cell7-6"
+        (click)="color($event, 'cell7-6')"
+        [style.background-color]="colorService.getColor('cell7-6')"
+      ></div>
+      <div
+        class="cell8-6"
+        (click)="color($event, 'cell8-6')"
+        [style.background-color]="colorService.getColor('cell8-6')"
+      ></div>
+      <div
+        class="cell9-6"
+        (click)="color($event, 'cell9-6')"
+        [style.background-color]="colorService.getColor('cell9-6')"
+      ></div>
+      <div
+        class="cell10-6"
+        (click)="color($event, 'cell10-6')"
+        [style.background-color]="colorService.getColor('cell10-6')"
+      ></div>
+      <div
+        class="cell11-6"
+        (click)="color($event, 'cell11-6')"
+        [style.background-color]="colorService.getColor('cell11-6')"
+      ></div>
+      <div
+        class="cell12-6"
+        (click)="color($event, 'cell12-6')"
+        [style.background-color]="colorService.getColor('cell12-6')"
+      ></div>
+      <div
+        class="cell13-6"
+        (click)="color($event, 'cell13-6')"
+        [style.background-color]="colorService.getColor('cell13-6')"
+      ></div>
     </div>
 
     <div class="schedule">
-      <div class="cell1" (click)="color($event)"></div>
-      <div class="cell2" (click)="color($event)"></div>
-      <div class="cell3" (click)="color($event)"></div>
-      <div class="cell4" (click)="color($event)"></div>
-      <div class="cell5" (click)="color($event)"></div>
-      <div class="cell6" (click)="color($event)"></div>
-      <div class="cell7" (click)="color($event)"></div>
-      <div class="cell8" (click)="color($event)"></div>
-      <div class="cell9" (click)="color($event)"></div>
-      <div class="cell10" (click)="color($event)"></div>
-      <div class="cell11" (click)="color($event)"></div>
-      <div class="cell12" (click)="color($event)"></div>
-      <div class="cell13" (click)="color($event)"></div>
+      <div
+        class="cell1-7"
+        (click)="color($event, 'cell1-7')"
+        [style.background-color]="colorService.getColor('cell1-7')"
+      ></div>
+      <div
+        class="cell2-7"
+        (click)="color($event, 'cell2-7')"
+        [style.background-color]="colorService.getColor('cell2-7')"
+      ></div>
+      <div
+        class="cell3-7"
+        (click)="color($event, 'cell3-7')"
+        [style.background-color]="colorService.getColor('cell3-7')"
+      ></div>
+      <div
+        class="cell4-7"
+        (click)="color($event, 'cell4-7')"
+        [style.background-color]="colorService.getColor('cell4-7')"
+      ></div>
+      <div
+        class="cell5-7"
+        (click)="color($event, 'cell5-7')"
+        [style.background-color]="colorService.getColor('cell5-7')"
+      ></div>
+      <div
+        class="cell6-7"
+        (click)="color($event, 'cell6-7')"
+        [style.background-color]="colorService.getColor('cell6-7')"
+      ></div>
+      <div
+        class="cell7-7"
+        (click)="color($event, 'cell7-7')"
+        [style.background-color]="colorService.getColor('cell7-7')"
+      ></div>
+      <div
+        class="cell8-7"
+        (click)="color($event, 'cell8-7')"
+        [style.background-color]="colorService.getColor('cell8-7')"
+      ></div>
+      <div
+        class="cell9-7"
+        (click)="color($event, 'cell9-7')"
+        [style.background-color]="colorService.getColor('cell9-7')"
+      ></div>
+      <div
+        class="cell10-7"
+        (click)="color($event, 'cell10-7')"
+        [style.background-color]="colorService.getColor('cell10-7')"
+      ></div>
+      <div
+        class="cell11-7"
+        (click)="color($event, 'cell11-7')"
+        [style.background-color]="colorService.getColor('cell11-7')"
+      ></div>
+      <div
+        class="cell12-7"
+        (click)="color($event, 'cell12-7')"
+        [style.background-color]="colorService.getColor('cell12-7')"
+      ></div>
+      <div
+        class="cell13-7"
+        (click)="color($event, 'cell13-7')"
+        [style.background-color]="colorService.getColor('cell13-7')"
+      ></div>
     </div>
   </div>
 </div>

@@ -5,7 +5,7 @@
     justify-content: center;
     background-color: rgb(238, 238, 238);
     height: 100vh;
-    height: 100vh;
+  
 
 
   
@@ -29,14 +29,16 @@
       width: 200px;
       height: 100px;
       margin-top: 30px;
-
+      margin-right: auto;
+      margin-left: auto;
+     
     }
 
     .btn-primary{
         background-color: rgb(118, 165, 118);
         border: rgb(118, 165, 118);
       }
-      .btn-secondary{
+    .btn-secondary{
         background-color: rgb(107, 107, 173);
         color: white;
         border: rgb(107, 107, 173);

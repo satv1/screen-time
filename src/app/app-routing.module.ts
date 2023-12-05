@@ -13,6 +13,7 @@ import { SuggestComponent } from './suggest/suggest.component';
 import { ContentComponent } from './content/content.component';
 import { RatingComponent } from './rating/rating.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
+import { ParentScheduleComponent } from './parent-schedule/parent-schedule.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'login', pathMatch: 'full' },
@@ -28,7 +29,8 @@ const routes: Routes = [
   { path: 'suggest', component: SuggestComponent },
   { path: 'content', component: ContentComponent },
   { path: 'rating', component: RatingComponent },
-  { path: 'nav-bar', component: NavBarComponent }
+  { path: 'nav-bar', component: NavBarComponent },
+  { path: 'parent-schedule', component: ParentScheduleComponent }
 
 ];
 

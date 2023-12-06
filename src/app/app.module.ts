@@ -21,6 +21,7 @@ import { SuggestComponent } from './suggest/suggest.component';
 import { ContentComponent } from './content/content.component';
 import { RatingComponent } from './rating/rating.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
+import { CreateAccountComponent } from './create-account/create-account.component';
 
 
 
@@ -40,7 +41,8 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
     SuggestComponent,
     ContentComponent,
     RatingComponent,
-    NavBarComponent
+    NavBarComponent,
+    CreateAccountComponent
   ],
   imports: [
     BrowserModule,

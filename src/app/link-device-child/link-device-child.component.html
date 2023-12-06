@@ -4,7 +4,7 @@
     <form #loginForm="ngForm">
         <div class="row">
             <div class="form-group col-md-3">
-                <label for="name">Enter name of parent</label>
+                <label for="name">Enter parent's username</label>
                 <input type="text" class="form-control" id="name" required [(ngModel)]="name" name="name">
                 <div [hidden]="loginForm.controls['name'].valid || loginForm.controls['name'].pristine" class="alert alert-danger">
                     Field is required

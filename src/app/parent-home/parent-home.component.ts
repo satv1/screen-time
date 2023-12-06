@@ -50,5 +50,10 @@ export class ParentHomeComponent {
 
   }
 
+  setSchedule(){
+    this.router.navigate(['parent-schedule'])
+
+  }
+
 
 }

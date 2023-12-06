@@ -11,18 +11,16 @@ import { UserService } from '../user.service';
   styleUrls: ['./user-type.component.scss']
 })
 export class UserTypeComponent {
-  constructor(private router: Router, private userService: UserService) { }
+  constructor(private router: Router, private userService: UserService) {}
 
   isParent() {
-    this.userService.setIsParent(true);
-    this.router.navigate(['link-device'])
+    this.userService.setIsChild(false);
+    this.router.navigate(['link-device']); 
   }
 
   isChild() {
     this.userService.setIsChild(true);
-    this.router.navigate(['link-device-child'])
+    this.router.navigate(['child-home']);
   }
-
-
 
 }

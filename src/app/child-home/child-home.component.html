@@ -1,46 +1,60 @@
-
-
 <div class="container">
   <app-header></app-header>
-  <p style="margin-left: 8px; font-weight: bold;"> {{ name }}'s Screen Time</p>
+  <p style="margin-left: 8px; font-weight: bold">{{ name }}'s Screen Time</p>
   <div class="content-container">
-      <p style="margin-left: 15px; margin-top: 10px; margin-left: 10px; font-weight: bold; font-size: x-large;"> <span style="font-size: larger;">1</span>h <span style="font-size: larger;">15</span>m </p>
-      <div class="line-separator"></div>
-      <div style = "margin-left: 15px;">
+    <p
+      style="
+        margin-left: 15px;
+        margin-top: 10px;
+        margin-left: 10px;
+        font-weight: bold;
+        font-size: x-large;
+      "
+    >
+      <span style="font-size: larger">1</span>h
+      <span style="font-size: larger">15</span>m
+    </p>
+    <div class="line-separator"></div>
+    <div style="margin-left: 15px">
       <div class="icon-container">
-          <img src="assets/tiktok.png" alt="Icon" class="icon">
-          <p class="text">TikTok: 35 min</p>
+        <img src="assets/tiktok.png" alt="Icon" class="icon" />
+        <p class="text">TikTok: 35 min</p>
       </div>
       <div class="icon-container">
-          <img src="assets/ytube.png" alt="Icon" class="icon">
-          <p class="text">YouTube: 23 min</p>
+        <img src="assets/ytube.png" alt="Icon" class="icon" />
+        <p class="text">YouTube: 23 min</p>
       </div>
 
       <div class="icon-container">
-          <img src="assets/insta.png" alt="Icon" class="icon">
-          <p class="text">Instagram: 17 min</p>
+        <img src="assets/insta.png" alt="Icon" class="icon" />
+        <p class="text">Instagram: 17 min</p>
       </div>
+    </div>
+    <div style="margin-top: 8px" class="line-separator"></div>
   </div>
-      <div style="margin-top: 8px;" class="line-separator"></div>
-  </div>
 
+  <p style="margin-left: 10px; font-weight: bold; margin-top: 20px">
+    Screen Time Limit
+  </p>
 
-
-  <p style="margin-left: 10px; font-weight: bold; margin-top: 20px;"> Screen Time Limit</p>
-
-  <div class="content-container" style = "margin-bottom: 10px;">
-      
-      <div class="container12">
-          <div *ngIf="timeLimit == ''" class="timeLim">
-              <p style="margin-top: 15px;">Time limit not set</p>
-          </div>
-          <div *ngIf="timeLimit !== ''" class="timeLim">
-              <p style="margin-top: 15px;">Time Limit: <b>{{ timeLimit }}</b></p>
-          </div>
+  <div class="content-container" style="margin-bottom: 10px">
+    <div class="container12">
+      <div *ngIf="timeLimit == ''" class="timeLim">
+        <p style="margin-top: 15px">Time limit not set</p>
       </div>
+      <div *ngIf="timeLimit !== ''" class="timeLim">
+        <p style="margin-top: 15px">
+          Time Limit: <b>{{ timeLimit }}</b>
+        </p>
+      </div>
+    </div>
   </div>
-  
- <div class="content-container" style="margin-bottom: 10px">
+
+  <p style="margin-left: 10px; font-weight: bold; margin-top: 20px">
+    Screen Time Schedule
+  </p>
+
+  <div class="content-container" style="margin-bottom: 10px">
     <div class="scheduleContainer">
       <div class="dayTitle"></div>
       <div class="dayTitle">M</div>
@@ -68,223 +82,551 @@
       </div>
 
       <div class="schedule">
-        <div class="cell1"></div>
-        <div class="cell2"></div>
-        <div class="cell3"></div>
-        <div class="cell4"></div>
-        <div class="cell5"></div>
-        <div class="cell6"></div>
-        <div class="cell7"></div>
-        <div class="cell8"></div>
-        <div class="cell9"></div>
-        <div class="cell10"></div>
-        <div class="cell11"></div>
-        <div class="cell12"></div>
-        <div class="cell13"></div>
+        <div
+          class="cell1"
+          [style.background-color]="colorService.getColor('cell1')"
+        ></div>
+        <div
+          class="cell2"
+          [style.background-color]="colorService.getColor('cell2')"
+        ></div>
+        <div
+          class="cell3"
+          [style.background-color]="colorService.getColor('cell3')"
+        ></div>
+        <div
+          class="cell4"
+          [style.background-color]="colorService.getColor('cell4')"
+        ></div>
+        <div
+          class="cell5"
+          [style.background-color]="colorService.getColor('cell5')"
+        ></div>
+        <div
+          class="cell6"
+          [style.background-color]="colorService.getColor('cell6')"
+        ></div>
+        <div
+          class="cell7"
+          [style.background-color]="colorService.getColor('cell7')"
+        ></div>
+        <div
+          class="cell8"
+          [style.background-color]="colorService.getColor('cell8')"
+        ></div>
+        <div
+          class="cell9"
+          [style.background-color]="colorService.getColor('cell9')"
+        ></div>
+        <div
+          class="cell10"
+          [style.background-color]="colorService.getColor('cell10')"
+        ></div>
+        <div
+          class="cell11"
+          [style.background-color]="colorService.getColor('cell11')"
+        ></div>
+        <div
+          class="cell12"
+          [style.background-color]="colorService.getColor('cell12')"
+        ></div>
+        <div
+          class="cell13"
+          [style.background-color]="colorService.getColor('cell13')"
+        ></div>
       </div>
 
       <div class="schedule">
-        <div class="cell1"></div>
-        <div class="cell2"></div>
-        <div class="cell3"></div>
-        <div class="cell4"></div>
-        <div class="cell5"></div>
-        <div class="cell6"></div>
-        <div class="cell7"></div>
-        <div class="cell8"></div>
-        <div class="cell9"></div>
-        <div class="cell10"></div>
-        <div class="cell11"></div>
-        <div class="cell12"></div>
-        <div class="cell13"></div>
+        <div
+          class="cell1-2"
+          [style.background-color]="colorService.getColor('cell1-2')"
+        ></div>
+        <div
+          class="cell2-2"
+          [style.background-color]="colorService.getColor('cell2-2')"
+        ></div>
+        <div
+          class="cell3-2"
+          [style.background-color]="colorService.getColor('cell3-2')"
+        ></div>
+        <div
+          class="cell4-2"
+          [style.background-color]="colorService.getColor('cell4-2')"
+        ></div>
+        <div
+          class="cell5-2"
+          [style.background-color]="colorService.getColor('cell5-2')"
+        ></div>
+        <div
+          class="cell6-2"
+          [style.background-color]="colorService.getColor('cell6-2')"
+        ></div>
+        <div
+          class="cell7-2"
+          [style.background-color]="colorService.getColor('cell7-2')"
+        ></div>
+        <div
+          class="cell8-2"
+          [style.background-color]="colorService.getColor('cell8-2')"
+        ></div>
+        <div
+          class="cell9-2"
+          [style.background-color]="colorService.getColor('cell9-2')"
+        ></div>
+        <div
+          class="cell10-2"
+          [style.background-color]="colorService.getColor('cell10-2')"
+        ></div>
+        <div
+          class="cell11-2"
+          [style.background-color]="colorService.getColor('cell11-2')"
+        ></div>
+        <div
+          class="cell12-2"
+          [style.background-color]="colorService.getColor('cell12-2')"
+        ></div>
+        <div
+          class="cell13-2"
+          [style.background-color]="colorService.getColor('cell13-2')"
+        ></div>
       </div>
 
       <div class="schedule">
-        <div class="cell1"></div>
-        <div class="cell2"></div>
-        <div class="cell3"></div>
-        <div class="cell4"></div>
-        <div class="cell5"></div>
-        <div class="cell6"></div>
-        <div class="cell7"></div>
-        <div class="cell8"></div>
-        <div class="cell9"></div>
-        <div class="cell10"></div>
-        <div class="cell11"></div>
-        <div class="cell12"></div>
-        <div class="cell13"></div>
+        <div
+          class="cell1-3"
+          [style.background-color]="colorService.getColor('cell1-3')"
+        ></div>
+        <div
+          class="cell2-3"
+          [style.background-color]="colorService.getColor('cell2-3')"
+        ></div>
+        <div
+          class="cell3-3"
+          [style.background-color]="colorService.getColor('cell3-3')"
+        ></div>
+        <div
+          class="cell4-3"
+          [style.background-color]="colorService.getColor('cell4-3')"
+        ></div>
+        <div
+          class="cell5-3"
+          [style.background-color]="colorService.getColor('cell5-3')"
+        ></div>
+        <div
+          class="cell6-3"
+          [style.background-color]="colorService.getColor('cell6-3')"
+        ></div>
+        <div
+          class="cell7-3"
+          [style.background-color]="colorService.getColor('cell7-3')"
+        ></div>
+        <div
+          class="cell8-3"
+          [style.background-color]="colorService.getColor('cell8-3')"
+        ></div>
+        <div
+          class="cell9-3"
+          [style.background-color]="colorService.getColor('cell9-3')"
+        ></div>
+        <div
+          class="cell10-3"
+          [style.background-color]="colorService.getColor('cell10-3')"
+        ></div>
+        <div
+          class="cell11-3"
+          [style.background-color]="colorService.getColor('cell11-3')"
+        ></div>
+        <div
+          class="cell12-3"
+          [style.background-color]="colorService.getColor('cell12-3')"
+        ></div>
+        <div
+          class="cell13-3"
+          [style.background-color]="colorService.getColor('cell13-3')"
+        ></div>
       </div>
 
       <div class="schedule">
-        <div class="cell1"></div>
-        <div class="cell2"></div>
-        <div class="cell3"></div>
-        <div class="cell4"></div>
-        <div class="cell5"></div>
-        <div class="cell6"></div>
-        <div class="cell7"></div>
-        <div class="cell8"></div>
-        <div class="cell9"></div>
-        <div class="cell10"></div>
-        <div class="cell11"></div>
-        <div class="cell12"></div>
-        <div class="cell13"></div>
+        <div
+          class="cell1-4"
+          [style.background-color]="colorService.getColor('cell1-4')"
+        ></div>
+        <div
+          class="cell2-4"
+          [style.background-color]="colorService.getColor('cell2-4')"
+        ></div>
+        <div
+          class="cell3-4"
+          [style.background-color]="colorService.getColor('cell3-4')"
+        ></div>
+        <div
+          class="cell4-4"
+          [style.background-color]="colorService.getColor('cell4-4')"
+        ></div>
+        <div
+          class="cell5-4"
+          [style.background-color]="colorService.getColor('cell5-4')"
+        ></div>
+        <div
+          class="cell6-4"
+          [style.background-color]="colorService.getColor('cell6-4')"
+        ></div>
+        <div
+          class="cell7-4"
+          [style.background-color]="colorService.getColor('cell7-4')"
+        ></div>
+        <div
+          class="cell8-4"
+          [style.background-color]="colorService.getColor('cell8-4')"
+        ></div>
+        <div
+          class="cell9-4"
+          [style.background-color]="colorService.getColor('cell9-4')"
+        ></div>
+        <div
+          class="cell10-4"
+          [style.background-color]="colorService.getColor('cell10-4')"
+        ></div>
+        <div
+          class="cell11-4"
+          [style.background-color]="colorService.getColor('cell11-4')"
+        ></div>
+        <div
+          class="cell12-4"
+          [style.background-color]="colorService.getColor('cell12-4')"
+        ></div>
+        <div
+          class="cell13-4"
+          [style.background-color]="colorService.getColor('cell13-4')"
+        ></div>
       </div>
 
       <div class="schedule">
-        <div class="cell1"></div>
-        <div class="cell2"></div>
-        <div class="cell3"></div>
-        <div class="cell4"></div>
-        <div class="cell5"></div>
-        <div class="cell6"></div>
-        <div class="cell7"></div>
-        <div class="cell8"></div>
-        <div class="cell9"></div>
-        <div class="cell10"></div>
-        <div class="cell11"></div>
-        <div class="cell12"></div>
-        <div class="cell13"></div>
+        <div
+          class="cell1-5"
+          [style.background-color]="colorService.getColor('cell1-5')"
+        ></div>
+        <div
+          class="cell2-5"
+          [style.background-color]="colorService.getColor('cell2-5')"
+        ></div>
+        <div
+          class="cell3-5"
+          [style.background-color]="colorService.getColor('cell3-5')"
+        ></div>
+        <div
+          class="cell4-5"
+          [style.background-color]="colorService.getColor('cell4-5')"
+        ></div>
+        <div
+          class="cell5-5"
+          [style.background-color]="colorService.getColor('cell5-5')"
+        ></div>
+        <div
+          class="cell6-5"
+          [style.background-color]="colorService.getColor('cell6-5')"
+        ></div>
+        <div
+          class="cell7-5"
+          [style.background-color]="colorService.getColor('cell7-5')"
+        ></div>
+        <div
+          class="cell8-5"
+          [style.background-color]="colorService.getColor('cell8-5')"
+        ></div>
+        <div
+          class="cell9-5"
+          [style.background-color]="colorService.getColor('cell9-5')"
+        ></div>
+        <div
+          class="cell10-5"
+          [style.background-color]="colorService.getColor('cell10-5')"
+        ></div>
+        <div
+          class="cell11-5"
+          [style.background-color]="colorService.getColor('cell11-5')"
+        ></div>
+        <div
+          class="cell12-5"
+          [style.background-color]="colorService.getColor('cell12-5')"
+        ></div>
+        <div
+          class="cell13-5"
+          [style.background-color]="colorService.getColor('cell13-5')"
+        ></div>
       </div>
 
       <div class="schedule">
-        <div class="cell1"></div>
-        <div class="cell2"></div>
-        <div class="cell3"></div>
-        <div class="cell4"></div>
-        <div class="cell5"></div>
-        <div class="cell6"></div>
-        <div class="cell7"></div>
-        <div class="cell8"></div>
-        <div class="cell9"></div>
-        <div class="cell10"></div>
-        <div class="cell11"></div>
-        <div class="cell12"></div>
-        <div class="cell13"></div>
+        <div
+          class="cell1-6"
+          [style.background-color]="colorService.getColor('cell1-6')"
+        ></div>
+        <div
+          class="cell2-6"
+          [style.background-color]="colorService.getColor('cell2-6')"
+        ></div>
+        <div
+          class="cell3-6"
+          [style.background-color]="colorService.getColor('cell3-6')"
+        ></div>
+        <div
+          class="cell4-6"
+          [style.background-color]="colorService.getColor('cell4-6')"
+        ></div>
+        <div
+          class="cell5-6"
+          [style.background-color]="colorService.getColor('cell5-6')"
+        ></div>
+        <div
+          class="cell6-6"
+          [style.background-color]="colorService.getColor('cell6-6')"
+        ></div>
+        <div
+          class="cell7-6"
+          [style.background-color]="colorService.getColor('cell7-6')"
+        ></div>
+        <div
+          class="cell8-6"
+          [style.background-color]="colorService.getColor('cell8-6')"
+        ></div>
+        <div
+          class="cell9-6"
+          [style.background-color]="colorService.getColor('cell9-6')"
+        ></div>
+        <div
+          class="cell10-6"
+          [style.background-color]="colorService.getColor('cell10-6')"
+        ></div>
+        <div
+          class="cell11-6"
+          [style.background-color]="colorService.getColor('cell11-6')"
+        ></div>
+        <div
+          class="cell12-6"
+          [style.background-color]="colorService.getColor('cell12-6')"
+        ></div>
+        <div
+          class="cell13-6"
+          [style.background-color]="colorService.getColor('cell13-6')"
+        ></div>
       </div>
 
       <div class="schedule">
-        <div class="cell1"></div>
-        <div class="cell2"></div>
-        <div class="cell3"></div>
-        <div class="cell4"></div>
-        <div class="cell5"></div>
-        <div class="cell6"></div>
-        <div class="cell7"></div>
-        <div class="cell8"></div>
-        <div class="cell9"></div>
-        <div class="cell10"></div>
-        <div class="cell11"></div>
-        <div class="cell12"></div>
-        <div class="cell13"></div>
+        <div
+          class="cell1-7"
+          [style.background-color]="colorService.getColor('cell1-7')"
+        ></div>
+        <div
+          class="cell2-7"
+          [style.background-color]="colorService.getColor('cell2-7')"
+        ></div>
+        <div
+          class="cell3-7"
+          [style.background-color]="colorService.getColor('cell3-7')"
+        ></div>
+        <div
+          class="cell4-7"
+          [style.background-color]="colorService.getColor('cell4-7')"
+        ></div>
+        <div
+          class="cell5-7"
+          [style.background-color]="colorService.getColor('cell5-7')"
+        ></div>
+        <div
+          class="cell6-7"
+          [style.background-color]="colorService.getColor('cell6-7')"
+        ></div>
+        <div
+          class="cell7-7"
+          [style.background-color]="colorService.getColor('cell7-7')"
+        ></div>
+        <div
+          class="cell8-7"
+          [style.background-color]="colorService.getColor('cell8-7')"
+        ></div>
+        <div
+          class="cell9-7"
+          [style.background-color]="colorService.getColor('cell9-7')"
+        ></div>
+        <div
+          class="cell10-7"
+          [style.background-color]="colorService.getColor('cell10-7')"
+        ></div>
+        <div
+          class="cell11-7"
+          [style.background-color]="colorService.getColor('cell11-7')"
+        ></div>
+        <div
+          class="cell12-7"
+          [style.background-color]="colorService.getColor('cell12-7')"
+        ></div>
+        <div
+          class="cell13-7"
+          [style.background-color]="colorService.getColor('cell13-7')"
+        ></div>
       </div>
     </div>
   </div>
-  
-  <p style="margin-left: 10px; font-weight: bold; margin-top: 20px;">Educational Content</p>
 
-  <div class="content-container" style = "margin-bottom: 10px;">
+  <p style="margin-left: 10px; font-weight: bold; margin-top: 20px">
+    Educational Content
+  </p>
+
+  <div class="content-container" style="margin-bottom: 10px">
     <div class="checkbox-container">
       <div class="compare" *ngIf="vid1">
-          <div class="checkbox-item">
-              <!-- <input type="dropdown" style="width: 30px;" class="checkbox-input"> -->
-              <div class="youtube-icon">
-                  <a href="https://www.youtube.com/watch?v=tQOSMcGkt6E&t=105s" target="_blank">
-                      <img src="assets/ytube.png" alt="YouTube Icon" style="width: 100%; height: 100%;">
-                    </a>                </div>
-              <div class="content">
-                  <div class="title">Effects of Phone Usage</div>
-                  <div class="description">Learn the effects of excessive screen time.</div>
-              </div>
+        <div class="checkbox-item">
+          <!-- <input type="dropdown" style="width: 30px;" class="checkbox-input"> -->
+          <div class="youtube-icon">
+            <a
+              href="https://www.youtube.com/watch?v=tQOSMcGkt6E&t=105s"
+              target="_blank"
+            >
+              <img
+                src="assets/ytube.png"
+                alt="YouTube Icon"
+                style="width: 100%; height: 100%"
+              />
+            </a>
           </div>
+          <div class="content">
+            <div class="title">Effects of Phone Usage</div>
+            <div class="description">
+              Learn the effects of excessive screen time.
+            </div>
+          </div>
+        </div>
       </div>
 
       <div class="compare" *ngIf="vid2">
-          <div class="checkbox-item">
-              <!-- <input type="dropdown" style="width: 30px;" class="checkbox-input"> -->
-              <div class="youtube-icon">
-                  <a href="https://youtu.be/FowxMfjN7n0?si=idcJOmoVu5oshsi4" target="_blank">
-                      <img src="assets/ytube.png" alt="YouTube Icon" style="width: 100%; height: 100%;">
-                    </a>
-                      </div>
-              <div class="content">
-                  <div class="title">Internet Safety</div>
-                  <div class="description">How to be safe on the internet.</div>
-              </div>
+        <div class="checkbox-item">
+          <!-- <input type="dropdown" style="width: 30px;" class="checkbox-input"> -->
+          <div class="youtube-icon">
+            <a
+              href="https://youtu.be/FowxMfjN7n0?si=idcJOmoVu5oshsi4"
+              target="_blank"
+            >
+              <img
+                src="assets/ytube.png"
+                alt="YouTube Icon"
+                style="width: 100%; height: 100%"
+              />
+            </a>
           </div>
+          <div class="content">
+            <div class="title">Internet Safety</div>
+            <div class="description">How to be safe on the internet.</div>
+          </div>
+        </div>
       </div>
 
       <div class="compare" *ngIf="vid3">
-          <div class="checkbox-item">
-              <!-- <input type="dropdown" style="width: 30px;" class="checkbox-input"> -->
-              <div class="youtube-icon">
-                  <a href="https://www.youtube.com/watch?v=dhpCdqOtuj0" target="_blank">
-                      <img src="assets/ytube.png" alt="YouTube Icon" style="width: 100%; height: 100%;">
-                    </a>
-                      </div>
-              <div class="content">
-                  <div class="title">Healthy Habits</div>
-                  <div class="description">What does it mean to be healthy?</div>
-              </div>
+        <div class="checkbox-item">
+          <!-- <input type="dropdown" style="width: 30px;" class="checkbox-input"> -->
+          <div class="youtube-icon">
+            <a
+              href="https://www.youtube.com/watch?v=dhpCdqOtuj0"
+              target="_blank"
+            >
+              <img
+                src="assets/ytube.png"
+                alt="YouTube Icon"
+                style="width: 100%; height: 100%"
+              />
+            </a>
           </div>
+          <div class="content">
+            <div class="title">Healthy Habits</div>
+            <div class="description">What does it mean to be healthy?</div>
+          </div>
+        </div>
       </div>
 
       <div class="compare" *ngIf="vid4">
-          <div class="checkbox-item">
-              <!-- <input type="dropdown" style="width: 30px;" class="checkbox-input"> -->
-              <div class="youtube-icon">
-                  <a href="https://youtu.be/vVS7nEVrBbs?si=UWT63GGkLK4jqG4A" target="_blank">
-                      <img src="assets/ytube.png" alt="YouTube Icon" style="width: 100%; height: 100%;">
-                    </a>
-                      </div>
-              <div class="content">
-                  <div class="title">Sports</div>
-                  <div class="description">Have a favorite sport or want to try one out?</div>
-              </div>
+        <div class="checkbox-item">
+          <!-- <input type="dropdown" style="width: 30px;" class="checkbox-input"> -->
+          <div class="youtube-icon">
+            <a
+              href="https://youtu.be/vVS7nEVrBbs?si=UWT63GGkLK4jqG4A"
+              target="_blank"
+            >
+              <img
+                src="assets/ytube.png"
+                alt="YouTube Icon"
+                style="width: 100%; height: 100%"
+              />
+            </a>
           </div>
+          <div class="content">
+            <div class="title">Sports</div>
+            <div class="description">
+              Have a favorite sport or want to try one out?
+            </div>
+          </div>
+        </div>
       </div>
       <div class="compare" *ngIf="vid5">
-          <div class="checkbox-item">
-              <!-- <input type="dropdown" style="width: 30px;" class="checkbox-input"> -->
-              <div class="youtube-icon">
-                  <a href="https://youtu.be/Z3F5koNzIUk?si=jSv4hLwA5euLpn95" target="_blank">
-                      <img src="assets/ytube.png" alt="YouTube Icon" style="width: 100%; height: 100%;">
-                    </a>
-                      </div>
-              <div class="content">
-                  <div class="title">Arts and Crafts</div>
-                  <div class="description">Express yourself through arts and crafts!</div>
-              </div>
+        <div class="checkbox-item">
+          <!-- <input type="dropdown" style="width: 30px;" class="checkbox-input"> -->
+          <div class="youtube-icon">
+            <a
+              href="https://youtu.be/Z3F5koNzIUk?si=jSv4hLwA5euLpn95"
+              target="_blank"
+            >
+              <img
+                src="assets/ytube.png"
+                alt="YouTube Icon"
+                style="width: 100%; height: 100%"
+              />
+            </a>
           </div>
+          <div class="content">
+            <div class="title">Arts and Crafts</div>
+            <div class="description">
+              Express yourself through arts and crafts!
+            </div>
+          </div>
+        </div>
       </div>
       <div class="compare" *ngIf="vid6">
-          <div class="checkbox-item">
-              <!-- <input type="dropdown" style="width: 30px;" class="checkbox-input"> -->
-              <div class="youtube-icon">
-                  <a href="https://youtu.be/EuLaLgYGI6w?si=o-gQQ84SzNC33XQJ" target="_blank">
-                      <img src="assets/ytube.png" alt="YouTube Icon" style="width: 100%; height: 100%;">
-                    </a>
-                      </div>
-              <div class="content">
-                  <div class="title">Journaling</div>
-                  <div class="description">The importance and impact of journaling.</div>
-              </div>
+        <div class="checkbox-item">
+          <!-- <input type="dropdown" style="width: 30px;" class="checkbox-input"> -->
+          <div class="youtube-icon">
+            <a
+              href="https://youtu.be/EuLaLgYGI6w?si=o-gQQ84SzNC33XQJ"
+              target="_blank"
+            >
+              <img
+                src="assets/ytube.png"
+                alt="YouTube Icon"
+                style="width: 100%; height: 100%"
+              />
+            </a>
           </div>
+          <div class="content">
+            <div class="title">Journaling</div>
+            <div class="description">
+              The importance and impact of journaling.
+            </div>
+          </div>
+        </div>
       </div>
-
-      
-  </div>
-  <div class="compare"
-      *ngIf="vid1 === false && vid2 === false && vid3 === false && vid4 === false && vid5 === false && vid6 === false">
-      <p style="margin-top: 15px;">Content not set</p>
+    </div>
+    <div
+      class="compare"
+      *ngIf="
+        vid1 === false &&
+        vid2 === false &&
+        vid3 === false &&
+        vid4 === false &&
+        vid5 === false &&
+        vid6 === false
+      "
+    >
+      <p style="margin-top: 15px">Content not set</p>
     </div>
   </div>
-
-
 </div>
-
-
-
 
 <!-- 
 <div class="container">

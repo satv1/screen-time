@@ -4,6 +4,8 @@ import { TimeService } from '../time.service';
 import { NotifyService } from '../notify.service';
 import { DataService } from '../data.service';
 import { CheckboxService } from '../checkbox.service';
+//services testing
+import { ColorService } from '../color.service';
 
 @Component({
   selector: 'app-child-home',
@@ -25,7 +27,7 @@ export class ChildHomeComponent {
   vid6: boolean = false;
 
 
-  constructor(private router: Router, private timeService: TimeService, private notifyService: NotifyService, private dataService: DataService, private checkboxService: CheckboxService) {
+  constructor(private router: Router, public colorService: ColorService, private timeService: TimeService, private notifyService: NotifyService, private dataService: DataService, private checkboxService: CheckboxService) {
     this.notifyService.notify$.subscribe((value) => {
       if (value) {
         this.navigateToNewPage();
@@ -58,7 +60,25 @@ export class ChildHomeComponent {
     });
   }
 
+  setCellColor(key: string) {
+    const color = this.colorService.getColor(key);
+    const element = document.querySelector(`.${key}`) as HTMLElement;
+    if (element) {
+      element.style.backgroundColor = color;
+    }
+  }
 
+  initializeCellColors() {
+    // Set the initial colors for each cell based on the stored values in ColorService
+    // Adjust the keys to match the pattern used in your ParentScheduleComponent
+    this.setCellColor('cell1');
+    this.setCellColor('cell2');
+    this.setCellColor('cell3');
+    this.setCellColor('cell4');
+    this.setCellColor('cell5');
+    this.setCellColor('cell6');
+    this.setCellColor('cell7');
+  }
 
 
   getName() {
@@ -71,9 +91,5 @@ export class ChildHomeComponent {
   navigateToNewPage() {
     this.router.navigate(['take-break']);
   }
-
-
-
-
 
 }

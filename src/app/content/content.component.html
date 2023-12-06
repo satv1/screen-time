@@ -1,93 +1,92 @@
 
 <div class="container">
-    <div class="header-container">
-        <div style = "margin-right: 400px; margin-top: 10px"class="back" (click) = "back()" >Back</div>
-    </div>
-    <h3>Select Content For Child</h3>
-    <div class="checkbox-container">
-        <h4 style="font-weight: bold">Phone Use</h4>
-        <div class="checkbox-item">
-          <input type="checkbox" class="checkbox-input" [(ngModel)]="vid1" (change)="saveVid1()">
-          <div class="youtube-icon">
-            <a href="https://www.youtube.com/watch?v=tQOSMcGkt6E&t=105s" target="_blank" onclick="return confirm('Are you sure you want to leave this page?');">
+  <div class="header-container">
+      <div style = "margin-right: 400px; margin-top: 10px"class="back" (click) = "back()" >Back</div>
+  </div>
+  <h3>Select Content For Child</h3>
+  <div class="checkbox-container">
+      <h4 style="font-weight: bold">Phone Use</h4>
+      <div class="checkbox-item">
+        <input type="checkbox" class="checkbox-input" [(ngModel)]="vid1" (change)="saveVid1()">
+        <div class="youtube-icon">
+          <a href="https://www.youtube.com/watch?v=tQOSMcGkt6E&t=105s" target="_blank">
               <img src="assets/ytube.png" alt="YouTube Icon" style="width: 100%; height: 100%;">
             </a>
-        </div>
-          <div class="content">
-            <div class="title">Effects of Phone Usage</div>
-            <div class="description">Learn the effects of excessive screen time.</div>
-          </div>
-        </div>
-
-      <div class="checkbox-item">
-        <input type="checkbox" class="checkbox-input" [(ngModel)]="vid2" (change)="saveVid2()">
-        <div class="youtube-icon">
-          <a href="https://youtu.be/FowxMfjN7n0?si=idcJOmoVu5oshsi4" target="_blank" onclick="return confirm('Are you sure you want to leave this page?');">
-            <img src="assets/ytube.png" alt="YouTube Icon" style="width: 100%; height: 100%;">
-          </a>
-          
-                      </div>
+      </div>
         <div class="content">
-          <div class="title">Internet Safety</div>
-          <div class="description">How to be safe on the internet</div>
+          <div class="title">Effects of Phone Usage</div>
+          <div class="description">Learn the effects of excessive screen time.</div>
         </div>
       </div>
-      <div class="checkbox-item">
-        <input type="checkbox" class="checkbox-input" [(ngModel)]="vid3" (change)="saveVid3()">
-        <div class="youtube-icon">
-          <a href="https://www.youtube.com/watch?v=dhpCdqOtuj0" target="_blank" onclick="return confirm('Are you sure you want to leave this page?');">
-            <img src="assets/ytube.png" alt="YouTube Icon" style="width: 100%; height: 100%;">
-          </a>
-                      </div>
-        <div class="content">
-          <div class="title">Healthy Habits</div>
-          <div class="description">What does it mean to be healthy?</div>
-        </div>
+
+    <div class="checkbox-item">
+      <input type="checkbox" class="checkbox-input" [(ngModel)]="vid2" (change)="saveVid2()">
+      <div class="youtube-icon">
+          <a href="https://youtu.be/FowxMfjN7n0?si=idcJOmoVu5oshsi4" target="_blank">
+              <img src="assets/ytube.png" alt="YouTube Icon" style="width: 100%; height: 100%;">
+            </a>
+                    </div>
+      <div class="content">
+        <div class="title">Internet Safety</div>
+        <div class="description">How to be safe on the internet</div>
+      </div>
+    </div>
+    <div class="checkbox-item">
+      <input type="checkbox" class="checkbox-input" [(ngModel)]="vid3" (change)="saveVid3()">
+      <div class="youtube-icon">
+          <a href="https://www.youtube.com/watch?v=dhpCdqOtuj0" target="_blank">
+              <img src="assets/ytube.png" alt="YouTube Icon" style="width: 100%; height: 100%;">
+            </a>
+                    </div>
+      <div class="content">
+        <div class="title">Healthy Habits</div>
+        <div class="description">What does it mean to be healthy?</div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="checkbox-container">
+      <h4 style = "font-weight: bold; margin-top: 10px;">Activities</h4>
+    <div class="checkbox-item">
+      <input type="checkbox" class="checkbox-input" [(ngModel)]="vid4" (change)="saveVid4()">
+      <div class="youtube-icon">
+          <a href="https://youtu.be/vVS7nEVrBbs?si=UWT63GGkLK4jqG4A" target="_blank">
+              <img src="assets/ytube.png" alt="YouTube Icon" style="width: 100%; height: 100%;">
+            </a>
+                    </div>
+      <div class="content">
+        <div class="title">Sports</div>
+        <div class="description">Have a favorite sport or want to try one out?</div>
       </div>
     </div>
 
-
-    <div class="checkbox-container">
-        <h4 style = "font-weight: bold; margin-top: 10px;">Activities</h4>
-      <div class="checkbox-item">
-        <input type="checkbox" class="checkbox-input" [(ngModel)]="vid4" (change)="saveVid4()">
-        <div class="youtube-icon">
-          <a href="https://youtu.be/vVS7nEVrBbs?si=UWT63GGkLK4jqG4A" target="_blank" onclick="return confirm('Are you sure you want to leave this page?');">
-            <img src="assets/ytube.png" alt="YouTube Icon" style="width: 100%; height: 100%;">
-          </a>
-                      </div>
-        <div class="content">
-          <div class="title">Sports</div>
-          <div class="description">Have a favorite sport or want to try one out?</div>
-        </div>
-      </div>
-
-      <div class="checkbox-item">
-        <input type="checkbox" class="checkbox-input" [(ngModel)]="vid5" (change)="saveVid5()">
-        <div class="youtube-icon">
-          <a href="https://youtu.be/Z3F5koNzIUk?si=jSv4hLwA5euLpn95" target="_blank" onclick="return confirm('Are you sure you want to leave this page?');">
-            <img src="assets/ytube.png" alt="YouTube Icon" style="width: 100%; height: 100%;">
-          </a>
-                      </div>
-        <div class="content">
-          <div class="title">Arts and Crafts</div>
-          <div class="description">Express yourself through arts and crafts!</div>
-        </div>
-      </div>
-      <div class="checkbox-item">
-        <input type="checkbox" class="checkbox-input" [(ngModel)]="vid6" (change)="saveVid6()">
-        <div class="youtube-icon">
-          <a href="https://youtu.be/EuLaLgYGI6w?si=o-gQQ84SzNC33XQJ" target="_blank" onclick="return confirm('Are you sure you want to leave this page?');">
-            <img src="assets/ytube.png" alt="YouTube Icon" style="width: 100%; height: 100%;">
-          </a>
-                      </div>
-        <div class="content">
-          <div class="title">Journaling</div>
-          <div class="description">The importance and impact of journaling</div>
-        </div>
+    <div class="checkbox-item">
+      <input type="checkbox" class="checkbox-input" [(ngModel)]="vid5" (change)="saveVid5()">
+      <div class="youtube-icon">
+          <a href="https://youtu.be/Z3F5koNzIUk?si=jSv4hLwA5euLpn95" target="_blank">
+              <img src="assets/ytube.png" alt="YouTube Icon" style="width: 100%; height: 100%;">
+            </a>
+                    </div>
+      <div class="content">
+        <div class="title">Arts and Crafts</div>
+        <div class="description">Express yourself through arts and crafts!</div>
       </div>
     </div>
+    <div class="checkbox-item">
+      <input type="checkbox" class="checkbox-input" [(ngModel)]="vid6" (change)="saveVid6()">
+      <div class="youtube-icon">
+          <a href="https://youtu.be/EuLaLgYGI6w?si=o-gQQ84SzNC33XQJ" target="_blank">
+              <img src="assets/ytube.png" alt="YouTube Icon" style="width: 100%; height: 100%;">
+            </a>
+                    </div>
+      <div class="content">
+        <div class="title">Journaling</div>
+        <div class="description">The importance and impact of journaling</div>
+      </div>
+    </div>
+  </div>
 
 
-    <button type="submit" class="btn btn-primary mt-2" (click)="onSubmit()">Continue</button>
+  <button type="submit" class="btn btn-primary mt-2" (click)="onSubmit()">Continue</button>
 </div>

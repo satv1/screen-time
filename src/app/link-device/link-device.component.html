@@ -1,20 +1,19 @@
 <div class="container">
-    <h1>Link Device</h1>
-  
-    <form #loginForm="ngForm">
-      <div class="row">
-        <div class="form-group col-md-6">
-          <label for="name">Enter child's username</label>
-          <input type="text" class="form-control" id="name" required [(ngModel)]="name" name="name">
-          <div [hidden]="loginForm.controls['name'].valid || loginForm.controls['name'].pristine" class="alert alert-danger">
-            Field is required
-          </div>
+  <h1>Link Device</h1>
+
+  <form #loginForm="ngForm">
+    <div class="row">
+      <div class="form-group col-md-6">
+        <label for="name">Enter name of child</label>
+        <input type="text" class="form-control" id="name" required [(ngModel)]="name" name="name">
+        <div [hidden]="loginForm.controls['name'].valid || loginForm.controls['name'].pristine" class="alert alert-danger">
+          Field is required
         </div>
       </div>
-  
-      <div class="row">
-        <button type="submit" class="btn btn-primary mt-2" [disabled]="!loginForm.form.valid" (click)="onSubmit()">Submit</button>
-      </div>
-    </form>
-  </div>
-  
+    </div>
+
+    <div class="row">
+      <button type="submit" class="btn btn-primary mt-2" [disabled]="!loginForm.form.valid" (click)="onSubmit()">Submit</button>
+    </div>
+  </form>
+</div>

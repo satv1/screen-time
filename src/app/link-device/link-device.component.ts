@@ -24,4 +24,3 @@ export class LinkDeviceComponent {
     this.router.navigate(['parent-home'])
   }
   }
-

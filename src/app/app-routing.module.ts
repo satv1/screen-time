@@ -14,7 +14,6 @@ import { ContentComponent } from './content/content.component';
 import { RatingComponent } from './rating/rating.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { ParentScheduleComponent } from './parent-schedule/parent-schedule.component';
-import { CreateAccountComponent } from './create-account/create-account.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'login', pathMatch: 'full' },
@@ -32,7 +31,6 @@ const routes: Routes = [
   { path: 'rating', component: RatingComponent },
   { path: 'nav-bar', component: NavBarComponent },
   { path: 'parent-schedule', component: ParentScheduleComponent },
-  { path: 'create-account', component: CreateAccountComponent }
 
 
 ];

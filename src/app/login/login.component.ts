@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { CredentialsService } from '../credentials.service';
 
 
 @Component({
@@ -11,25 +10,15 @@ import { CredentialsService } from '../credentials.service';
 export class LoginComponent {
 
 
-  username: string = '';
-  password: string = '';
+  username: string = "";
+  password: string = "";
 
-  constructor(private router: Router, private credService: CredentialsService) {}
+  constructor(private router: Router) { }
+
 
   submitted = false;
-
-  onSubmit() {
-    this.submitted = true;
-
-    if (this.credService.isValidUser(this.username, this.password)) {
-      this.router.navigate(['user-type']);
-    } else {
-      console.log('Invalid username or password');
-    }
-  }
-
-  create() {
-    this.router.navigate(['create-account']);
+  onSubmit() { this.submitted = true; 
+    this.router.navigate(['user-type'])
   }
 
 }

@@ -48,7 +48,7 @@ export class ParentScheduleComponent {
 
       // Add or remove the class based on the toggle state
       if (this.isCellClicked) {
-        const selectedColor = 'green'; // Change this to the color you want
+        const selectedColor = 'lightgrey'; // Change this to the color you want
         element.classList.add('cell-clicked');
         this.colorService.setColor(key, selectedColor);
       } else {

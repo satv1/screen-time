@@ -54,7 +54,11 @@
     Screen Time Schedule
   </p>
 
+  
+
   <div class="content-container" style="margin-bottom: 10px;">
+    <div style="margin-top: 10px;">
+    </div>
     <div class="scheduleContainer">
       <div class="dayTitle"></div>
       <div class="dayTitle">M</div>
@@ -466,6 +470,10 @@
         ></div>
       </div>
     </div>
+    <div style="display: inline-block; margin-left: 4px; margin-top: 20px; margin-bottom: 5px;">
+      <img src="/assets/green.png" style="margin-right: 5px;" alt="Green" width="20" height="20">
+      <span style="font-size: smaller;">Screen Time Allowed</span>
+    </div>
   </div>
 
   <p style="margin-left: 10px; font-weight: bold; margin-top: 20px">
@@ -477,11 +485,11 @@
       <div class="compare" *ngIf="vid1">
         <div class="checkbox-item">
           <!-- <input type="dropdown" style="width: 30px;" class="checkbox-input"> -->
+
           <div class="youtube-icon">
-            <a
-              href="https://www.youtube.com/watch?v=tQOSMcGkt6E&t=105s"
-              target="_blank"
-            >
+            <a href="https://www.youtube.com/watch?v=tQOSMcGkt6E&t=105s" target="_blank" onclick="return confirm('Are you sure you want to leave this page?');">
+            
+
               <img
                 src="assets/ytube.png"
                 alt="YouTube Icon"
@@ -489,6 +497,7 @@
               />
             </a>
           </div>
+
           <div class="content">
             <div class="title">Effects of Phone Usage</div>
             <div class="description">
@@ -501,11 +510,11 @@
       <div class="compare" *ngIf="vid2">
         <div class="checkbox-item">
           <!-- <input type="dropdown" style="width: 30px;" class="checkbox-input"> -->
+
           <div class="youtube-icon">
-            <a
-              href="https://youtu.be/FowxMfjN7n0?si=idcJOmoVu5oshsi4"
-              target="_blank"
-            >
+            <a href="https://youtu.be/EuLaLgYGI6w?si=o-gQQ84SzNC33XQJ" target="_blank" onclick="return confirm('Are you sure you want to leave this page?');">
+            
+
               <img
                 src="assets/ytube.png"
                 alt="YouTube Icon"
@@ -513,6 +522,7 @@
               />
             </a>
           </div>
+          
           <div class="content">
             <div class="title">Internet Safety</div>
             <div class="description">How to be safe on the internet.</div>
@@ -523,11 +533,12 @@
       <div class="compare" *ngIf="vid3">
         <div class="checkbox-item">
           <!-- <input type="dropdown" style="width: 30px;" class="checkbox-input"> -->
+
+
           <div class="youtube-icon">
-            <a
-              href="https://www.youtube.com/watch?v=dhpCdqOtuj0"
-              target="_blank"
-            >
+            <a href="https://www.youtube.com/watch?v=dhpCdqOtuj0" target="_blank" onclick="return confirm('Are you sure you want to leave this page?');">
+            
+
               <img
                 src="assets/ytube.png"
                 alt="YouTube Icon"
@@ -546,10 +557,9 @@
         <div class="checkbox-item">
           <!-- <input type="dropdown" style="width: 30px;" class="checkbox-input"> -->
           <div class="youtube-icon">
-            <a
-              href="https://youtu.be/vVS7nEVrBbs?si=UWT63GGkLK4jqG4A"
-              target="_blank"
-            >
+            <a href="https://youtu.be/vVS7nEVrBbs?si=UWT63GGkLK4jqG4A" target="_blank" onclick="return confirm('Are you sure you want to leave this page?');">
+            
+
               <img
                 src="assets/ytube.png"
                 alt="YouTube Icon"
@@ -557,6 +567,7 @@
               />
             </a>
           </div>
+
           <div class="content">
             <div class="title">Sports</div>
             <div class="description">
@@ -569,10 +580,9 @@
         <div class="checkbox-item">
           <!-- <input type="dropdown" style="width: 30px;" class="checkbox-input"> -->
           <div class="youtube-icon">
-            <a
-              href="https://youtu.be/Z3F5koNzIUk?si=jSv4hLwA5euLpn95"
-              target="_blank"
-            >
+            <a href="https://youtu.be/Z3F5koNzIUk?si=jSv4hLwA5euLpn95" target="_blank" onclick="return confirm('Are you sure you want to leave this page?');">
+            
+
               <img
                 src="assets/ytube.png"
                 alt="YouTube Icon"
@@ -592,10 +602,9 @@
         <div class="checkbox-item">
           <!-- <input type="dropdown" style="width: 30px;" class="checkbox-input"> -->
           <div class="youtube-icon">
-            <a
-              href="https://youtu.be/EuLaLgYGI6w?si=o-gQQ84SzNC33XQJ"
-              target="_blank"
-            >
+            <a href="https://youtu.be/EuLaLgYGI6w?si=o-gQQ84SzNC33XQJ" target="_blank" onclick="return confirm('Are you sure you want to leave this page?');">
+            
+
               <img
                 src="assets/ytube.png"
                 alt="YouTube Icon"
@@ -628,60 +637,3 @@
   </div>
 </div>
 
-<!-- 
-<div class="container">
-    <app-header></app-header>
-
-
-
-    <div class="screen-time">
-      <p class = "top">Screen Time Total</p>
-      <h3>1 hr 15 min</h3>
-      <div class="apps"> <br>
-        <p><span style="font-weight: bold;">TikTok</span>: 35 min</p>
-        <p><span style="font-weight: bold;">YouTube</span>: 23 min</p>
-        <p><span style="font-weight: bold;">Instagram</span>: 17 min</p>
-      </div>
-      <div *ngIf="timeLimit !== ''">
-        <h3>Time Limit: {{ timeLimit }}</h3>
-      </div>
-    </div>
-  
-    <div class="row">
-      <div class="col-12 col-md-4">
-        <div class="content-wrapper" style="display: flex; align-items: center;">
-          <a href="https://www.youtube.com/watch?v=tQOSMcGkt6E&t=105s" target="_blank" class="btn btn-primary mt-2">
-            <img src="assets/youtube-icon.png" alt="Description of the image">
-          </a>
-            <div class="des" style="margin-left: 10px;">
-                <h5><span style="font-weight: bold;">Effects of Phone Usage</span></h5>
-                <h6>Learn the effects of excessive screen time.</h6>
-            </div>
-        </div>
-    </div>
-    <div class="col-12 col-md-4">
-      <div class="content-wrapper" style="display: flex; align-items: center;">
-        <a href="https://youtu.be/FowxMfjN7n0?si=idcJOmoVu5oshsi4" target="_blank" class="btn btn-primary mt-2">
-          <img src="assets/youtube-icon.png" alt="Description of the image">
-        </a>
-                <div class="des" style="margin-left: 10px;">
-                    <h5><span style="font-weight: bold;">Internet Safety</span></h5>
-                    <h6>How to be safe on the internet</h6>
-                </div>
-            </div>
-        </div>
-        <div class="col-12 col-md-4">
-          <div class="content-wrapper" style="display: flex; align-items: center;">
-            <a href="https://www.youtube.com/watch?v=dhpCdqOtuj0" target="_blank" class="btn btn-primary mt-2">
-              <img src="assets/youtube-icon.png" alt="Description of the image">
-            </a>
-                <div class="des" style="margin-left: 10px;">
-                    <h5><span style="font-weight: bold;">Healthy Habits</span></h5>
-                    <h6>What does it mean to be healthy?</h6>
-                </div>
-            </div>
-        </div>  
-</div>        
-    
-    
-</div> -->

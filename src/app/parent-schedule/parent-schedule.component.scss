@@ -7,11 +7,14 @@
     font-family: 'Arial';
     font-weight: 700;
     height: 100vh;
+    width: 85%;
+
+    
     
 }
 
 .dayTitle{
-    padding-left: 15px;
+    padding-left: 6px;
 }
 .buttonHolder{
     align-content:end;
@@ -23,7 +26,7 @@
 
 .scheduleContainer {
     display: grid;
-    grid-template-columns: 70px 45px 45px 45px 45px 45px 45px 45px;
+    grid-template-columns: 40px 25px 25px 25px 25px 25px 25px 25px;
     gap: 14px; /* Adjust the gap as needed */
     margin-top: 20px; /* Add margin for separation */
 }
@@ -46,9 +49,9 @@
 .schedule div{
     cursor: pointer;
     text-align: center;
-    background-color: lightgray;
+    background-color: green;
     height: 20px;
-    width: 43px;
+    width: 23px;
 }
 //schedule1
 .cell1{
@@ -120,5 +123,5 @@
     border-bottom-right-radius: 10px;
 }
 .cell-clicked {
-    background-color: lightgrey !important;
+    background-color: lightgray !important;
 }

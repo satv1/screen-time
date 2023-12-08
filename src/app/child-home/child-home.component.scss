@@ -5,7 +5,7 @@
 .container {
     background-color: rgb(241, 239, 255);
     height: 100%;
-    width: 80%;
+    width: 85%;
 
 
 }
@@ -29,7 +29,7 @@
 // styling for schedule
   .scheduleContainer {
     display: grid;
-    grid-template-columns: 70px 25px 25px 25px 25px 25px 25px 25px;
+    grid-template-columns: 40px 25px 25px 25px 25px 25px 25px 25px;
     gap: 14px; /* Adjust the gap as needed */
     margin-top: 20px; /* Add margin for separation */
     //background: white;
@@ -54,10 +54,14 @@
 .schedule div{
   cursor: pointer;
   text-align: center;
-  background-color: lightgray;
+  background-color: green;
   //background-color: white;
   height: 20px;
   width: 23px;
+}
+.dayTitle{
+  padding-left: 5px;
+
 }
 .cell1{
   border-top-left-radius: 10px;
@@ -138,7 +142,7 @@
   border-bottom-right-radius: 10px;
 }
 .cell-clicked {
-  background-color: green !important;
+  background-color: lightgray !important;
 }
 // end of schedule styling 
 

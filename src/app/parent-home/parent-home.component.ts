@@ -31,8 +31,10 @@ export class ParentHomeComponent {
   }
 
   notify() {
-    this.notifyService.toggleNotification();
-    this.router.navigate(['notified'])
+    if (!this.notifyService.notifySubject.value) {
+      this.notifyService.toggleNotification();
+    }
+    this.router.navigate(['notified']);
   }
   setLimit() {
     this.router.navigate(['set-limit'])

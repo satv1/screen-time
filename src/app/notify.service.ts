@@ -5,7 +5,7 @@ import { BehaviorSubject } from 'rxjs';
   providedIn: 'root'
 })
 export class NotifyService {
-  private notifySubject = new BehaviorSubject<boolean>(false);
+  public notifySubject = new BehaviorSubject<boolean>(false);
 
   notify$ = this.notifySubject.asObservable();
 

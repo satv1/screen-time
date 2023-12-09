@@ -69,8 +69,6 @@ export class ChildHomeComponent {
   }
 
   initializeCellColors() {
-    // Set the initial colors for each cell based on the stored values in ColorService
-    // Adjust the keys to match the pattern used in your ParentScheduleComponent
     this.setCellColor('cell1');
     this.setCellColor('cell2');
     this.setCellColor('cell3');

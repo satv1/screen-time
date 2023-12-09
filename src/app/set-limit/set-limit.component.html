@@ -1,6 +1,6 @@
 <div class = container>
     <div class="header-container">
-        <div class="back" (click) = "back()" >Back</div>
+        <div class="back-btn" (click) = "back()" >Back</div>
     </div>
     <h3>Set Time Limit</h3>
         <form #loginForm="ngForm">
@@ -13,7 +13,7 @@
                     </div>
                 </div>
             </div>
-            <button type="submit" class="btn btn-primary mt-2" [disabled]="!loginForm.form.valid" (click)="onSubmit()">Submit</button>
+            <button type="submit" class="btn btn-primary mt-2" [disabled]="!loginForm.form.valid" (click)="onSubmit()">Set Limit</button>
 
             </form>
     </div>

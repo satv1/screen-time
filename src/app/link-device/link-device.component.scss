@@ -6,28 +6,54 @@
   background-color: rgb(238, 238, 238);
   height: 100vh;
   text-align: center;
-  width: 85%;
+  width: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
 
   h1 {
     margin-bottom: 20px;
     font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
 
   form {
     width: 80%;
     max-width: 400px;
     margin: 0 auto;
+    
   }
 
   .form-group {
     margin-bottom: 20px;
     width: 100%;
   }
-
   button {
     width: 100%;
     max-width: 200px;
-    margin-top: 20px;
+    margin: 20px auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
+  
+}
+button {
+  width: 100%;
+  max-width: 200px;
+  margin: 20px auto;
+}
+
+.back-btn {
+  margin-right: 320px;
+  margin-bottom: 10px;
+  background-color: #f2f2f2; 
+  color: #333;
+  padding: 3px 8px; 
+  border: 1px solid #ccc; 
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; 
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.back-btn:hover {
+  background-color: #ddd; 
 }

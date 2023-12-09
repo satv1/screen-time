@@ -7,21 +7,29 @@
     font-family: 'Arial';
     font-weight: 700;
     height: 100vh;
-    width: 85%;
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
 
     
     
 }
 
 .dayTitle{
-    padding-left: 6px;
+    padding-left: 3px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
 }
 .buttonHolder{
     align-content:end;
     padding-left: 450px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
 }
 .buttonHolder .back{
     border-radius: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
 }
 
 .scheduleContainer {
@@ -29,12 +37,16 @@
     grid-template-columns: 40px 25px 25px 25px 25px 25px 25px 25px;
     gap: 14px; /* Adjust the gap as needed */
     margin-top: 20px; /* Add margin for separation */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
 }
 
 .timeList{
     display: grid;
     grid-template-columns: 70px;
     align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
 }
 
 .schedule{
@@ -45,6 +57,8 @@
     border: 1px solid black; //maybe change to dropshadow
     border-radius: 10px;
     align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
 }
 .schedule div{
     cursor: pointer;
@@ -52,11 +66,14 @@
     background-color: green;
     height: 20px;
     width: 23px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
 }
 //schedule1
 .cell1{
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    
 }
 .cell13{
     border-bottom-left-radius: 10px;
@@ -125,3 +142,23 @@
 .cell-clicked {
     background-color: lightgray !important;
 }
+
+
+.back-btn {
+    margin-right: 310px;
+    margin-bottom: 10px;
+    background-color: #f2f2f2; 
+    color: #333;
+    padding: 3px 8px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .back-btn:hover {
+    background-color: #ddd; 
+  }
+  
+

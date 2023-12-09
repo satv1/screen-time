@@ -5,7 +5,9 @@
 .container {
     background-color: rgb(241, 239, 255);
     height: 100%;
-    width: 85%;
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
 
 
 }
@@ -17,12 +19,16 @@
   width: 100%;
   box-sizing: border-box;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
   }
   .line-separator {
     border-top: 1px solid #ccc;
     width: 100%;
     flex-shrink: 0;
     margin-bottom: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
   }
   
 
@@ -34,13 +40,16 @@
     margin-top: 20px; /* Add margin for separation */
     //background: white;
     //border-radius: 10px;
-    font-family: 'Arial';
     font-weight: 700;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
 }
 .timeList{
   display: grid;
   grid-template-columns: 70px;
   align-items: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
 }
 .schedule{
   display: grid;
@@ -50,6 +59,8 @@
   border: 1px solid black; //maybe change to dropshadow
   border-radius: 10px;
   align-items: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
 }
 .schedule div{
   cursor: pointer;
@@ -58,9 +69,13 @@
   //background-color: white;
   height: 20px;
   width: 23px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
 }
 .dayTitle{
   padding-left: 5px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
 
 }
 .cell1{
@@ -161,6 +176,8 @@
 
 .text {
   margin-top: 12px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
 }
 .container12 {
   display: flex;
@@ -173,6 +190,8 @@ button{
   width: 88px;
   height: 30px;
   flex-shrink: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
   }
 
 
@@ -208,10 +227,14 @@ button{
     font-size: 12px;
     font-weight: bold;
     margin-bottom: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
   }
 
   .description {
     font-size: 12px;
     color: #555;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
   }
 

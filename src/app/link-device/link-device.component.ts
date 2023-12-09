@@ -23,4 +23,8 @@ export class LinkDeviceComponent {
     this.dataService.setName(this.name);
     this.router.navigate(['parent-home'])
   }
+  back(){
+    this.router.navigate(['user-type'])
+  }
+
   }

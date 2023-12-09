@@ -18,5 +18,10 @@ export class LinkDeviceChildComponent {
     this.router.navigate(['child-home'])
   }
 
+  back(){
+    this.router.navigate(['user-type'])
+  }
+
+
 
 }

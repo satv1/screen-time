@@ -4,7 +4,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## View app
 
-View app on: [satv1.github.io/screen-time](satv1.github.io/screen-time)
+View app on: [https://satv1.github.io/screen-time](https://satv1.github.io/screen-time)
 
 ## Development server
 

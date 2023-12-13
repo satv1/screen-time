@@ -4,7 +4,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## View app
 
-View app on: [https://satv1.github.io/screen-time](https://satv1.github.io/screen-time)
+Minimize screen and view web-based app for smartphones on: [https://satv1.github.io/screen-time](https://satv1.github.io/screen-time)
 
 ## Development server
 
